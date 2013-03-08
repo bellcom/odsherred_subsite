@@ -12,3 +12,6 @@ dev:
 # Cleans up files downloaded through drush make
 clean:
 		rm -rf modules/contrib
+		rm -rf themes/odsherredweb
+		rm -rf themes/cmstheme
+		rm -rf themes/omega
