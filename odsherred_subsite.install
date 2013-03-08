@@ -1,0 +1,15 @@
+<?php
+/**
+ * @file
+ * This file handles installation tasks for the subsite profile.
+ */
+
+/**
+ * Implement hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ */
+function odsherred_subsite_install() {
+  include_once DRUPAL_ROOT . '/profiles/standard/standard.install';
+  standard_install();
+}

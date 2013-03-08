@@ -1,0 +1,5 @@
+name = Odsherred Subsite
+description = Installs a subsite profile.
+core = 7.x
+dependencies[] = field_ui
+files[] = odsherred_subsite.profile
