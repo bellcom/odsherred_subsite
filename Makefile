@@ -11,4 +11,4 @@ dev:
 
 # Cleans up files downloaded through drush make
 clean:
-		rm -rf modules/contrib/*
+		rm -rf modules/contrib
