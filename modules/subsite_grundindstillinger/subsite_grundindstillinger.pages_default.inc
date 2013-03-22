@@ -30,7 +30,9 @@ function subsite_grundindstillinger_default_page_manager_pages() {
     ),
   );
   $page->arguments = array();
-  $page->conf = array();
+  $page->conf = array(
+    'admin_paths' => FALSE,
+  );
   $page->default_handlers = array();
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
