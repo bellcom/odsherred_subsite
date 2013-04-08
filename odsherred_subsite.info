@@ -2,6 +2,10 @@ name = Odsherred Subsite
 description = Installs a subsite profile.
 core = 7.x
 dependencies[] = field_ui
+dependencies[] = subsite_kontaktinfo
+dependencies[] = subsite_permissions
+dependencies[] = subsite_spotbokse
+
 files[] = odsherred_subsite.profile
 
 dependencies[] = block
