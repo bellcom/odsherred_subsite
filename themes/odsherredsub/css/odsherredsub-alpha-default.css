@@ -22,7 +22,9 @@ a:visited {  color: #000;}
 .front .view-seneste-ny .billede { float: left; margin-right: 20px; }
 #region-sidebar-first ul.menu { margin: 10px;}
 #region-sidebar-first ul.menu li ul { margin: 0;}
-
+#zone-content-wrapper { min-height: 363px;
+}
+#region-content { min-height: 325px;}
 #section-header, #zone-branding  { 
 	background-image: none !important;
 }

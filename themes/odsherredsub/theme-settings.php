@@ -58,12 +58,13 @@ function odsherredsub_form_system_theme_settings_alter(&$form, $form_state) {
     '#title' => t('Color'),
     '#default_value' => theme_get_setting('theme_color'),
     '#options'  => array(
-        'blue'      => t('Blue'),
-        'green'     => t('Green'),
-        'red'      => t('Red'),
-        'yellow'      => t('Yellow'),
-        'brown'     => t('Brown'),
-        'purple'      => t('Purple'),
+        'blue'      => t('Blå'),
+        'green'     => t('Grøn'),
+        'red'      => t('Rød'),
+        'pink'      => t('Pink'),
+        'cyan'      => t('Cyan'),
+        'brown'     => t('Brun'),
+        'purple'      => t('Lilla'),
     ),
   );
 
