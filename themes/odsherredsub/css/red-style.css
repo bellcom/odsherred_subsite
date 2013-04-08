@@ -1,1 +1,7 @@
-#page { background-image: url(red/p-bg.png); background-repeat: repeat-x;}
+#page { background-image: url(red/sub-bg-red.png); background-repeat: repeat-x;}
+.section-header .block-search input[type="submit"] { background-image: url(red/search-btn-red.png)}
+#region-content a:link, #region-content a:visited, #region-content a, #region-content h2, #region-content h3, #region-content h4 {color: #c83724 !important}
+
+#region-sidebar-first ul.menu li { background-image: url(img/ikon-red-larger.png) !important}
+#region-sidebar-first ul.menu li.expanded { background-image: url(img/ikon-red-down.png) !important}
+#region-sidebar-first ul.menu li ul li { background-image: url(img/ikon-red-dot.png) !important}

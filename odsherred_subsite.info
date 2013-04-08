@@ -6,6 +6,7 @@ dependencies[] = subsite_kontaktinfo
 dependencies[] = subsite_permissions
 dependencies[] = subsite_spotbokse
 dependencies[] = subsite_grundindstillinger
+
 files[] = odsherred_subsite.profile
 
 dependencies[] = block
