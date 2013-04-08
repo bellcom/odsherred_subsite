@@ -1,3 +1,21 @@
 #page { background-image: url(blue/p-bg-blue.png); background-repeat: repeat-x;}
 .section-header .block-search input[type="submit"] { background-image: url(blue/search-btn.png)}
-a, a:link, a:visited, h2, h3 { color: #0a5080}
+
+a, a:link, a:visited, 
+h2, h3, 
+h6.site-slogan { color: #0a5080}
+
+#region-sidebar-first ul.menu li.active-trail a.active  { color: #0a5080 !important; font-weight: normal;}
+/* menu */ 
+
+#region-sidebar-first ul.menu li {
+	background-image: url(blue/arrow-right.png) !important;
+	}
+	
+#region-sidebar-first ul.menu li ul li {
+	background-image: url(blue/arrow-dash.png) !important;
+	}
+	
+#region-sidebar-first ul.menu li.expanded {
+		background-image: url(blue/arrow-down.png) !important;
+	}
