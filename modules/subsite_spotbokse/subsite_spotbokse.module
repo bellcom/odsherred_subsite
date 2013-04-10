@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Subsite spotbokse feature.
+ */
+
+include_once 'subsite_spotbokse.features.inc';

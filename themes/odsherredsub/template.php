@@ -67,7 +67,7 @@ function odsherredsub_image_style($variables) {
  */
 function odsherredsub_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {
-    $form['search_block_form']['#attributes']['placeholder'] = t('Hvad kan vi hjælpe med?');
+    $form['search_block_form']['#attributes']['placeholder'] = t('Hvad kan vi hjÃ¦lpe med?');
   }
 
 }
