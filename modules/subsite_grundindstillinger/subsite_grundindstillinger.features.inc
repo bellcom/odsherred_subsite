@@ -117,6 +117,14 @@ function subsite_grundindstillinger_node_info() {
       'title_label' => t('Titel'),
       'help' => '',
     ),
+    'page' => array(
+      'name' => t('Indholdsside'),
+      'base' => 'node_content',
+      'description' => t('Use <em>basic pages</em> for your static content, such as an \'About us\' page.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'subsite_nyhed' => array(
       'name' => t('Subsite nyhed'),
       'base' => 'node_content',
