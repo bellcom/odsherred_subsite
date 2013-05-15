@@ -119,6 +119,7 @@ function subsite_kontaktinfo_views_default_views() {
   $handler->display->display_options['fields']['field_ean_nr']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['field_ean_nr']['element_wrapper_class'] = 'ean';
   $handler->display->display_options['fields']['field_ean_nr']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_ean_nr']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_ean_nr']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_ean_nr']['separator'] = '<br />EAN: ';
   /* Sorteringskriterie: Indhold: Oprettelsesdato */
@@ -144,6 +145,10 @@ function subsite_kontaktinfo_views_default_views() {
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+
+  /* Display: Spotboks kontaktblok */
+  $handler = $view->new_display('block', 'Spotboks kontaktblok', 'block_1');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $translatables['kontaktblok'] = array(
     t('Master'),
     t('mere'),
@@ -155,6 +160,7 @@ function subsite_kontaktinfo_views_default_views() {
     t('Redigér-link'),
     t('EAN'),
     t('Block'),
+    t('Spotboks kontaktblok'),
   );
   $export['kontaktblok'] = $view;
 

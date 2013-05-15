@@ -13,6 +13,14 @@ function subsite_grundindstillinger_ctools_plugin_api() {
     return array("version" => "3");
   }
   list($module, $api) = func_get_args();
+  if ($module == "field_group" && $api == "field_group") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
+  if ($module == "linkit" && $api == "linkit_profiles") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "page_manager" && $api == "pages_default") {
     return array("version" => "1");
   }
@@ -51,6 +59,50 @@ function subsite_grundindstillinger_image_default_styles() {
         'data' => array(
           'width' => '930',
           'height' => '280',
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported image style: indholdsside.
+  $styles['indholdsside'] = array(
+    'name' => 'indholdsside',
+    'effects' => array(
+      1 => array(
+        'label' => 'Skalér og beskær',
+        'help' => 'Skalering og beskæring bevarer billedets højde-bredde-forhold og beskærer derefter den største dimension. Det er nyttigt til at generere kvadratiske thumbnails uden at forvrænge billedet.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => '680',
+          'height' => '235',
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported image style: indholdsside_alt.
+  $styles['indholdsside_alt'] = array(
+    'name' => 'indholdsside_alt',
+    'effects' => array(
+      3 => array(
+        'label' => 'Skalér og beskær',
+        'help' => 'Skalering og beskæring bevarer billedets højde-bredde-forhold og beskærer derefter den største dimension. Det er nyttigt til at generere kvadratiske thumbnails uden at forvrænge billedet.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => '340',
+          'height' => '235',
         ),
         'weight' => '1',
       ),
@@ -101,6 +153,29 @@ function subsite_grundindstillinger_image_default_styles() {
     ),
   );
 
+  // Exported image style: velkomst.
+  $styles['velkomst'] = array(
+    'name' => 'velkomst',
+    'effects' => array(
+      2 => array(
+        'label' => 'Skalér',
+        'help' => 'Skalering bevarer billedets højde-bredde-forhold. Hvis kun den ene dimension angives vil den anden blive beregnet.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => '440',
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
   return $styles;
 }
 
@@ -120,7 +195,7 @@ function subsite_grundindstillinger_node_info() {
     'page' => array(
       'name' => t('Indholdsside'),
       'base' => 'node_content',
-      'description' => t('Use <em>basic pages</em> for your static content, such as an \'About us\' page.'),
+      'description' => '',
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

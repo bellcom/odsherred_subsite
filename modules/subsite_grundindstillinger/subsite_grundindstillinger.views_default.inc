@@ -183,7 +183,7 @@ function subsite_grundindstillinger_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Felt: Indhold: Body */
+  /* Felt: Indhold: Indhold */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -236,7 +236,7 @@ function subsite_grundindstillinger_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Seneste ny fra %sitename';
+  $handler->display->display_options['title'] = 'Seneste nyt';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'mere';
   $handler->display->display_options['access']['type'] = 'perm';
@@ -276,7 +276,7 @@ function subsite_grundindstillinger_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Felt: Indhold: Body */
+  /* Felt: Indhold: Indhold */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -316,7 +316,7 @@ function subsite_grundindstillinger_views_default_views() {
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $translatables['seneste_ny'] = array(
     t('Master'),
-    t('Seneste ny fra %sitename'),
+    t('Seneste nyt'),
     t('mere'),
     t('Udfør'),
     t('Gendan'),

@@ -14,7 +14,7 @@ function subsite_grundindstillinger_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'clean_url';
-  $strongarm->value = 1;
+  $strongarm->value = TRUE;
   $export['clean_url'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -239,10 +239,10 @@ function subsite_grundindstillinger_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '30',
+          'weight' => '3',
         ),
       ),
       'display' => array(),
@@ -332,7 +332,7 @@ function subsite_grundindstillinger_strongarm() {
     'domain' => '',
     'prefix' => 'da',
     'weight' => '0',
-    'javascript' => 'IhrQoChOjJh2doK2VWGp2VAM6hZuT3XejSkG3M9lcuM',
+    'javascript' => 'xbXAtbpQ72j4k_X7PmIgM-kKPVmACWOYCR0iKm0moZU',
   );
   $export['language_default'] = $strongarm;
 
@@ -410,9 +410,7 @@ function subsite_grundindstillinger_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_page';
-  $strongarm->value = array(
-    0 => 'status',
-  );
+  $strongarm->value = array();
   $export['node_options_page'] = $strongarm;
 
   $strongarm = new stdClass();

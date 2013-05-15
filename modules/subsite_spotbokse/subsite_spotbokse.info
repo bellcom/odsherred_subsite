@@ -38,4 +38,5 @@ features[variable][] = save_continue_spotboks
 features[views_view][] = spotbokse
 features_exclude[dependencies][ctools] = ctools
 features_exclude[dependencies][image] = image
+no autodetect = 1
 project path = profiles/odsherred_subsite/modules

@@ -155,6 +155,12 @@ function subsite_spotbokse_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '0';
   $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Sidefod: Global: View-område */
+  $handler->display->display_options['footer']['view']['id'] = 'view';
+  $handler->display->display_options['footer']['view']['table'] = 'views';
+  $handler->display->display_options['footer']['view']['field'] = 'view';
+  $handler->display->display_options['footer']['view']['view_to_insert'] = 'kontaktblok:block_1';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Forbindelse: Entity Reference: Referencing entity */
   $handler->display->display_options['relationships']['reverse_field_spotbokse_node']['id'] = 'reverse_field_spotbokse_node';

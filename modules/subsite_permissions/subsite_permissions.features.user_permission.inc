@@ -75,17 +75,6 @@ function subsite_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: add media from remote sources.
-  $permissions['add media from remote sources'] = array(
-    'name' => 'add media from remote sources',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'let bruger' => 'let bruger',
-      'super bruger' => 'super bruger',
-    ),
-    'module' => 'media_internet',
-  );
-
   // Exported permission: administer blocks.
   $permissions['administer blocks'] = array(
     'name' => 'administer blocks',
@@ -142,15 +131,6 @@ function subsite_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'super bruger' => 'super bruger',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: create article content.
-  $permissions['create article content'] = array(
-    'name' => 'create article content',
-    'roles' => array(
-      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
