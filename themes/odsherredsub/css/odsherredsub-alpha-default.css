@@ -157,3 +157,11 @@ a:visited {  color: #000;}
 .pane-node-field-alternativt-billede {float: right; margin-bottom: 15px;}
 
 .media_embed iframe { max-width: 100%; min-width: 100%;}
+
+.not-front #region-content .region-inner { background-color: #FFF; padding-left: 10px; padding-right: 10px}
+
+.page-nyheder .views-row { clear: both; margin-bottom: 10px; padding-bottom: 10px; border-top: 1px solid #555}
+.page-nyheder .views-row-1 { border-top: none}
+.page-nyheder .views-row p { margin-bottom: 0px; }
+.page-nyheder .billede { float: left; clear: both; margin-bottom: 25px; margin-right: 10px; }
+.page-nyheder .views-more-link {float: right; margin-bottom: 10px; }
