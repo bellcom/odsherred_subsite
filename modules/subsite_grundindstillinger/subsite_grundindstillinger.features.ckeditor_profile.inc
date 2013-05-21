@@ -91,7 +91,7 @@ function subsite_grundindstillinger_ckeditor_profile_defaults() {
         'ckeditor_plugins_local_path' => '',
         'ckfinder_path' => '%m/ckfinder',
         'ckfinder_local_path' => '',
-        'ckeditor_aggregate' => 'f',
+        'ckeditor_aggregate' => 't',
         'toolbar_wizard' => 't',
         'loadPlugins' => array(),
       ),
@@ -211,7 +211,9 @@ function subsite_grundindstillinger_ckeditor_profile_defaults() {
           ),
         ),
       ),
-      'input_formats' => array(),
+      'input_formats' => array(
+        'full_html' => 'Full HTML',
+      ),
     ),
     'kun_teskt' => array(
       'name' => 'kun_teskt',
@@ -272,7 +274,9 @@ function subsite_grundindstillinger_ckeditor_profile_defaults() {
           ),
         ),
       ),
-      'input_formats' => array(),
+      'input_formats' => array(
+        'kun_tekst' => 'Kun tekst',
+      ),
     ),
     'os2web' => array(
       'name' => 'os2web',
@@ -287,9 +291,9 @@ function subsite_grundindstillinger_ckeditor_profile_defaults() {
     [\'Cut\',\'Copy\',\'Paste\',\'PasteText\',\'PasteFromWord\',\'-\',\'SpellChecker\',\'Scayt\'],
     [\'Undo\',\'Redo\',\'Find\',\'Replace\',\'-\',\'SelectAll\',\'RemoveFormat\'],
     [\'Table\',\'HorizontalRule\',\'SpecialChar\'],
-    [\'Maximize\',\'ShowBlocks\',\'Media\'],
+    [\'Maximize\',\'ShowBlocks\',\'Media\',\'Styles\'],
     \'/\',
-    [\'Format\'],
+    
     [\'Bold\',\'Italic\',\'Underline\',\'Strike\',\'-\',\'Subscript\',\'Superscript\'],
     [\'NumberedList\',\'BulletedList\',\'-\',\'Outdent\',\'Indent\',\'Blockquote\'],
     [\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\',\'JustifyBlock\',\'-\',\'BidiRtl\',\'BidiLtr\',\'linkit\'],
@@ -327,7 +331,7 @@ function subsite_grundindstillinger_ckeditor_profile_defaults() {
         'forcePasteAsPlainText' => 't',
         'html_entities' => 'f',
         'scayt_autoStartup' => 'f',
-        'theme_config_js' => 'f',
+        'theme_config_js' => 't',
         'js_conf' => '',
         'loadPlugins' => array(
           'drupalbreaks' => array(
