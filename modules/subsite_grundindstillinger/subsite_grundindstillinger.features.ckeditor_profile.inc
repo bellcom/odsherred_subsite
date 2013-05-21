@@ -211,9 +211,7 @@ function subsite_grundindstillinger_ckeditor_profile_defaults() {
           ),
         ),
       ),
-      'input_formats' => array(
-        'full_html' => 'Full HTML',
-      ),
+      'input_formats' => array(),
     ),
     'kun_teskt' => array(
       'name' => 'kun_teskt',
@@ -274,9 +272,7 @@ function subsite_grundindstillinger_ckeditor_profile_defaults() {
           ),
         ),
       ),
-      'input_formats' => array(
-        'kun_tekst' => 'Kun tekst',
-      ),
+      'input_formats' => array(),
     ),
     'os2web' => array(
       'name' => 'os2web',
