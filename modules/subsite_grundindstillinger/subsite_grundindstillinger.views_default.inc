@@ -99,6 +99,7 @@ function subsite_grundindstillinger_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['path'] = '[field_bannerlink]';
   $handler->display->display_options['fields']['title']['alter']['absolute'] = TRUE;
@@ -109,6 +110,17 @@ function subsite_grundindstillinger_views_default_views() {
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h3';
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Felt: Indhold: Tekst */
+  $handler->display->display_options['fields']['field_bannertekst']['id'] = 'field_bannertekst';
+  $handler->display->display_options['fields']['field_bannertekst']['table'] = 'field_data_field_bannertekst';
+  $handler->display->display_options['fields']['field_bannertekst']['field'] = 'field_bannertekst';
+  $handler->display->display_options['fields']['field_bannertekst']['label'] = '';
+  $handler->display->display_options['fields']['field_bannertekst']['alter']['nl2br'] = TRUE;
+  $handler->display->display_options['fields']['field_bannertekst']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_bannertekst']['element_wrapper_type'] = 'h3';
+  $handler->display->display_options['fields']['field_bannertekst']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_bannertekst']['empty'] = '[title]';
+  $handler->display->display_options['fields']['field_bannertekst']['hide_alter_empty'] = FALSE;
   /* Sorteringskriterie: Indhold: Oprettelsesdato */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -140,6 +152,7 @@ function subsite_grundindstillinger_views_default_views() {
     t('Sortér efter'),
     t('Stigende'),
     t('Faldende'),
+    t('[title]'),
     t('Block'),
   );
   $export['banner'] = $view;

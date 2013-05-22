@@ -166,6 +166,77 @@ function subsite_grundindstillinger_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-banner-field_bannertekst'.
+  $fields['node-banner-field_bannertekst'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_bannertekst',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'text_long',
+    ),
+    'field_instance' => array(
+      'bundle' => 'banner',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'Hvis der indsættes tekst i dette felt, vil det blive vist i stedet for titlen.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 2,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_bannertekst',
+      'label' => 'Tekst',
+      'required' => 0,
+      'settings' => array(
+        'linkit' => array(
+          'enable' => 0,
+          'insert_plugin' => '',
+        ),
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'rows' => '5',
+        ),
+        'type' => 'text_textarea',
+        'weight' => '31',
+      ),
+    ),
+  );
+
   // Exported field: 'node-page-body'.
   $fields['node-page-body'] = array(
     'field_config' => array(
@@ -1114,6 +1185,7 @@ function subsite_grundindstillinger_field_default_fields() {
   t('Bannerlink');
   t('Billeder');
   t('Filer');
+  t('Hvis der indsættes tekst i dette felt, vil det blive vist i stedet for titlen.');
   t('Indhold');
   t('Introtekst');
   t('Selvbetjeninger');
