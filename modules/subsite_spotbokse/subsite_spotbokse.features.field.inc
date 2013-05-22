@@ -151,7 +151,7 @@ function subsite_spotbokse_field_default_fields() {
         'enable_tokens' => 1,
         'linkit' => array(
           'enable' => 1,
-          'insert_plugin' => 'html_link',
+          'insert_plugin' => 'raw_url',
         ),
         'title' => 'required',
         'title_maxlength' => '128',
@@ -228,13 +228,15 @@ function subsite_spotbokse_field_default_fields() {
       'required' => 1,
       'settings' => array(
         'alt_field' => 1,
+        'alt_field_required' => 1,
         'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '210x187',
-        'title_field' => 0,
+        'title_field' => 1,
+        'title_field_required' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(

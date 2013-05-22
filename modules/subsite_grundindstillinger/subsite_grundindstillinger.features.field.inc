@@ -298,6 +298,7 @@ function subsite_grundindstillinger_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'alt_field' => 1,
+        'alt_field_required' => 1,
         'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'png gif jpg jpeg',
@@ -305,6 +306,7 @@ function subsite_grundindstillinger_field_default_fields() {
         'max_resolution' => '',
         'min_resolution' => '',
         'title_field' => 1,
+        'title_field_required' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -383,6 +385,7 @@ function subsite_grundindstillinger_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'alt_field' => 1,
+        'alt_field_required' => 1,
         'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'png gif jpg jpeg',
@@ -390,6 +393,7 @@ function subsite_grundindstillinger_field_default_fields() {
         'max_resolution' => '',
         'min_resolution' => '680x235',
         'title_field' => 1,
+        'title_field_required' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -539,6 +543,7 @@ function subsite_grundindstillinger_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'alt_field' => 0,
+        'alt_field_required' => 0,
         'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'pdf',
@@ -546,6 +551,7 @@ function subsite_grundindstillinger_field_default_fields() {
         'max_resolution' => '',
         'min_resolution' => '',
         'title_field' => 0,
+        'title_field_required' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -989,7 +995,7 @@ function subsite_grundindstillinger_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'alt_field' => 0,
-        'alt_field_required' => 0,
+        'alt_field_required' => 1,
         'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'png gif jpg jpeg',
@@ -997,7 +1003,7 @@ function subsite_grundindstillinger_field_default_fields() {
         'max_resolution' => '',
         'min_resolution' => '',
         'title_field' => 0,
-        'title_field_required' => 0,
+        'title_field_required' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1005,14 +1011,20 @@ function subsite_grundindstillinger_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
-            0 => 'public',
-            1 => 'private',
+            'public' => 'public',
           ),
           'allowed_types' => array(
-            0 => 'image',
+            'audio' => 0,
+            'document' => 0,
+            'image' => 'image',
+            'video' => 0,
           ),
-          'browser_plugins' => array(),
-          'preview_image_style' => 'thumbnail',
+          'browser_plugins' => array(
+            'media_internet' => 0,
+            'upload' => 0,
+            'yani_media_browser--media_browser_1' => 0,
+            'yani_media_browser--media_browser_my_files' => 0,
+          ),
           'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
