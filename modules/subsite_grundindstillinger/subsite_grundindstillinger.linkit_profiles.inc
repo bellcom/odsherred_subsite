@@ -39,8 +39,8 @@ function subsite_grundindstillinger_default_linkit_profiles() {
       'bundles' => array(
         'page' => 'page',
         'subsite_nyhed' => 'subsite_nyhed',
-        'article' => 0,
         'banner' => 0,
+        'os2web_borger_dk_article' => 0,
         'kontaktinfo' => 0,
         'selv' => 0,
         'spotboks' => 0,
@@ -67,6 +67,18 @@ function subsite_grundindstillinger_default_linkit_profiles() {
     ),
     'entity:taxonomy_term' => array(
       'result_description' => '',
+      'bundles' => array(
+        'tags' => 0,
+        'os2web_taxonomies_tax_comittee' => 0,
+        'os2web_taxonomies_tax_editor_tag' => 0,
+        'os2web_taxonomies_tax_kle' => 0,
+        'os2web_taxonomies_tax_org' => 0,
+        'os2web_taxonomies_tax_places' => 0,
+        'os2web_taxonomies_tax_politics' => 0,
+        'os2web_taxonomies_tax_portal_cat' => 0,
+        'os2web_taxonomies_tax_user_pos' => 0,
+      ),
+      'group_by_bundle' => 0,
     ),
     'entity:user' => array(
       'result_description' => '',
@@ -99,7 +111,9 @@ function subsite_grundindstillinger_default_linkit_profiles() {
       ),
     ),
   );
-  $linkit_profile->role_rids = array();
+  $linkit_profile->role_rids = array(
+    2 => 1,
+  );
   $linkit_profile->weight = 0;
   $export['unavngiven_profil'] = $linkit_profile;
 

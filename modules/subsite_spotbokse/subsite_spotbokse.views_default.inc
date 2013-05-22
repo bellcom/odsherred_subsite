@@ -63,7 +63,7 @@ function subsite_spotbokse_views_default_views() {
   $handler->display->display_options['fields']['field_spotbillede']['field'] = 'field_spotbillede';
   $handler->display->display_options['fields']['field_spotbillede']['label'] = '';
   $handler->display->display_options['fields']['field_spotbillede']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_spotbillede']['alter']['path'] = '[field_link_til_side] ';
+  $handler->display->display_options['fields']['field_spotbillede']['alter']['path'] = '[field_link_til_side]';
   $handler->display->display_options['fields']['field_spotbillede']['alter']['alt'] = '[field_link_til_side_1]';
   $handler->display->display_options['fields']['field_spotbillede']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_spotbillede']['element_class'] = 'billede';
