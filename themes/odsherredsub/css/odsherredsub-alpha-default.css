@@ -139,8 +139,11 @@ a:visited {  color: #000;}
 .pane-views-panes .view-spotbokse .views-row { float: left; margin: 20px 10px; padding: 5px;background-color: #FFF;}
 .pane-views-panes .view-spotbokse .views-row-1, .pane-views-panes .view-spotbokse .views-row-4, .pane-views-panes .view-spotbokse .views-row-7, .pane-views-panes .view-spotbokse .views-row-10 { margin-left: 0px}
 .pane-views-panes .view-spotbokse .views-row-3, .pane-views-panes .view-spotbokse .views-row-6, .pane-views-panes .view-spotbokse .views-row-9, .pane-views-panes .view-spotbokse .views-row-12 { margin-right: 0px}
-.view-spotbokse a:link,
-.view-spotbokse a:visited { text-decoration: none; color: #000;}
+.view-spotbokse .resten a:link,
+.view-spotbokse .resten a:visited { color: #000 !important;}
+
+.view-spotbokse a {text-decoration: none !important; }
+.views-field-field-email a { font-weight: bold}
 
 .view-spotbokse .ekstratekst { position: absolute; bottom: 5px; background-image:url(img/spot-tekst-bg.png); width: 210px}
 .view-spotbokse .ekstratekst .titel { display: block; font-size: 14px; border-top: 4px solid #00538F; padding: 5px 10px; }
@@ -158,10 +161,12 @@ a:visited {  color: #000;}
 
 .media_embed iframe { max-width: 100%; min-width: 100%;}
 
-.not-front #region-content .region-inner { background-color: #FFF; padding-left: 10px; padding-right: 10px}
-
+/*.not-front #region-content .region-inner { background-color: #FFF; padding-left: 10px; padding-right: 10px}
+*/
 .page-nyheder .views-row { clear: both; margin-bottom: 10px; padding-bottom: 10px; border-top: 1px solid #555}
 .page-nyheder .views-row-1 { border-top: none}
 .page-nyheder .views-row p { margin-bottom: 0px; }
 .page-nyheder .billede { float: left; clear: both; margin-bottom: 25px; margin-right: 10px; }
 .page-nyheder .views-more-link {float: right; margin-bottom: 10px; }
+
+.views-field-field-traeffetid .item-list li { margin-left: 0; padding-left: 0;}
