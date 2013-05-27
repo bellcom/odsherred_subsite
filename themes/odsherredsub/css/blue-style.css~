@@ -1,0 +1,25 @@
+#page { background-image: url(blue/p-bg-blue.png); background-repeat: repeat-x;}
+.section-header .block-search input[type="submit"] { background-image: url(blue/search-btn.png) !important}
+
+a, a:link, a:visited, 
+h2, h3, 
+h6.site-slogan { color: #0a5080}
+
+#region-sidebar-first ul.menu li.expanded.active-trail a.active
+   { color: #0a5080 !important; }
+/* menu */ 
+
+#region-sidebar-first ul.menu li {
+	background-image: url(blue/arrow-right.png) !important;
+	}
+	
+#region-sidebar-first ul.menu li ul li {
+	background-image: url(blue/arrow-dash.png) !important;
+	}
+	
+#region-sidebar-first ul.menu li.expanded {
+		background-image: url(blue/arrow-down.png) !important;
+	}
+	
+.not-front.page-node #section-content, .page-a-aa-index #section-content  {
+	}

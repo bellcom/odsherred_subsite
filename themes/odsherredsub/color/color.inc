@@ -1,0 +1,56 @@
+<?php
+// $Id: color.inc,v 1.7 2010/12/14 19:53:14 dries Exp $
+
+// Put the logo path into JavaScript for the live preview.
+drupal_add_js(array('color' => array('logo' => theme_get_setting('logo', 'beta'))), 'setting');
+
+$info = array(
+  // Available colors and color labels used in theme.
+  'fields' => array(
+    'link' => t('Link color'),
+  ),
+  // Pre-defined color schemes.
+  'schemes' => array(
+    'default' => array(
+      'title' => t('Blue'),
+      'colors' => array(
+        'link' => '#0a5080',       // default link colors
+      ),
+    ),
+  ),
+  // CSS files (excluding @import) to rewrite with new color scheme.
+  'css' => array(
+    'css/colors.css',
+  ),
+
+  // Files to copy.
+  'copy' => array(
+    'logo.png',
+  ),
+
+  // Gradient definitions.
+  'gradients' => array(
+  ),
+
+  // Color areas to fill (x, y, width, height).
+  'fill' => array(
+    'link' => array(0,0,4,1704),
+  ),
+
+  // Coordinates of all the theme slices (x, y, width, height)
+  // with their filename as used in the stylesheet.
+  'slices' => array(
+    'images/ods-sub-transp-bg.png' => array(0, 0, 4, 1704),
+  ),
+
+  // Reference color used for blending. Matches the base.png's colors.
+  'blend_target' => '#ffffff',
+
+  // Preview files.
+  'preview_css' => 'color/preview.css',
+  'preview_js' => 'color/preview.js',
+  'preview_html' => 'color/preview.html',
+
+  // Base file for image generation.
+  'base_image' => 'images/bg_trans.png',
+);
