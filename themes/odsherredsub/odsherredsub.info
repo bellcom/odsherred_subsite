@@ -35,8 +35,6 @@ zones[footer] = 'Footer'
 css[global.css][name] = 'Grund design'
 css[global.css][description] = 'Her er grund farverne.'
 css[global.css][options][weight] = '10'
-; Add our stylesheet for the Color module to override.
-stylesheets[all][] = css/colors.css
 scripts[0] = 'js/jquery.backgroundfrontpage.js'
 scripts[1] = 'js/jquery.portalMenuPageDimmer.js'
 scripts[2] = 'js/jquery.panel-toggle.js'
@@ -448,3 +446,6 @@ settings[alpha_region_footer_first_css] = ''
 settings[alpha_region_footer_first_equal_height_element] = '0'
 settings[alpha_region_footer_first_equal_height_container] = '0'
 settings[theme_color] = 'blue'
+
+; Add our stylesheet for the Color module to override.
+stylesheets[all][] = 'css/colors.css'
