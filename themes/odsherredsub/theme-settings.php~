@@ -20,7 +20,7 @@
  */ 
  
 function odsherredsub_form_system_theme_settings_alter(&$form, $form_state) {
-  /*global $base_url;
+  global $base_url;
 
   // Get theme name from url (admin/.../theme_name)
   $theme_name = arg(count(arg()) - 1);
@@ -70,5 +70,4 @@ function odsherredsub_form_system_theme_settings_alter(&$form, $form_state) {
 
   // Return theme settings form
   return $form;
-  */
 }

@@ -30,17 +30,23 @@ $info = array(
 
   // Gradient definitions.
   'gradients' => array(
+//     array(
+//       'dimension' => array(0,0,39,1704),
+//       'direction' => 'vertical',
+//       'colors' => array('link', 'link'),
+//     ),
   ),
 
   // Color areas to fill (x, y, width, height).
   'fill' => array(
-    'link' => array(0,0,4,1704),
+    'link' => array(0,0,36,522),
   ),
 
   // Coordinates of all the theme slices (x, y, width, height)
   // with their filename as used in the stylesheet.
   'slices' => array(
-    'images/ods-sub-transp-bg.png' => array(0, 0, 4, 1704),
+    'images/ods-sub-transp-bg.png' => array(0, 0, 1, 522),
+    'images/sog.png' => array(4,0,35,32),
   ),
 
   // Reference color used for blending. Matches the base.png's colors.
@@ -52,5 +58,5 @@ $info = array(
   'preview_html' => 'color/preview.html',
 
   // Base file for image generation.
-  'base_image' => 'color/bg_trans.png',
+  'base_image' => 'images/base.png',
 );

@@ -1,4 +1,4 @@
-#page { background-image: url(../images/bg_trans.png); background-repeat: repeat-x;}
+#page { background-image: url(../images/ods-sub-transp-bg.png); background-repeat: repeat-x;}
 .section-header .block-search input[type="submit"] { background-image: url(blue/search-btn.png) !important}
 
 a, a:link, a:visited, 
@@ -22,4 +22,8 @@ h6.site-slogan { color: #0a5080}
 	}
 	
 .not-front.page-node #section-content, .page-a-aa-index #section-content  {
+	}
+	
+.section-header .block-search input[type="text"] {
+		background-image: url(../images/sog.png);
 	}

@@ -33,9 +33,7 @@ a:visited {  color: #000;}
 
 #region-branding { height: 85px !important;}
 
-#section-footer { position: relative !important; margin-top: 10px;}
 
-#region-footer-first .region-inner { padding: 45px 135px 10px 12px;  background-image: url(img/footer-bg-odsherred.png); background-repeat: no-repeat; }
 #region-preface-first { margin-bottom: 10px;}
 .view-banner { border: 5px solid #FFF; position: relative; background-color: #FFF;}
 .view-banner h3 { 
@@ -66,6 +64,9 @@ a:visited {  color: #000;}
 #views_slideshow_controls_text_next_banner-block { position: absolute; bottom: 30px; left: 50px; z-index: 99;text-indent: 99999px; background-image: url(img/arrow-right-white.png); width: 13px; height: 11px; overflow: hidden}
 
 .front .region-header-first-inner { padding-left: 0 !important;}
+
+#block-system-main .field-type-text-long.field-name-field-field-resume-long { font-size: 15px;}
+
 
 .section-header .block-search { background-color: transparent;}
 .section-header .block-search .form-type-textfield input { background-color: #FFF; color: #333;;}
@@ -113,7 +114,6 @@ a:visited {  color: #000;}
 	padding-left: 10px;
 	float: left;
 	background-repeat: no-repeat;
-	width: 254px;
 	}
 	
 #region-sidebar-first .block {
@@ -140,8 +140,11 @@ a:visited {  color: #000;}
 .pane-views-panes .view-spotbokse .views-row { float: left; margin: 20px 10px; padding: 5px;background-color: #FFF;}
 .pane-views-panes .view-spotbokse .views-row-1, .pane-views-panes .view-spotbokse .views-row-4, .pane-views-panes .view-spotbokse .views-row-7, .pane-views-panes .view-spotbokse .views-row-10 { margin-left: 0px}
 .pane-views-panes .view-spotbokse .views-row-3, .pane-views-panes .view-spotbokse .views-row-6, .pane-views-panes .view-spotbokse .views-row-9, .pane-views-panes .view-spotbokse .views-row-12 { margin-right: 0px}
-.view-spotbokse a:link,
-.view-spotbokse a:visited { text-decoration: none; color: #000;}
+.view-spotbokse .resten a:link,
+.view-spotbokse .resten a:visited { color: #000 !important;}
+
+.view-spotbokse a {text-decoration: none !important; }
+.views-field-field-email a { font-weight: bold}
 
 .view-spotbokse .ekstratekst { position: absolute; bottom: 5px; background-image:url(img/spot-tekst-bg.png); width: 210px}
 .view-spotbokse .ekstratekst .titel { display: block; font-size: 14px; border-top: 4px solid #00538F; padding: 5px 10px; }
@@ -159,10 +162,22 @@ a:visited {  color: #000;}
 
 .media_embed iframe { max-width: 100%; min-width: 100%;}
 
-.not-front #region-content .region-inner { background-color: #FFF; padding-left: 10px; padding-right: 10px}
-
+/*.not-front #region-content .region-inner { background-color: #FFF; padding-left: 10px; padding-right: 10px}
+*/
 .page-nyheder .views-row { clear: both; margin-bottom: 10px; padding-bottom: 10px; border-top: 1px solid #555}
 .page-nyheder .views-row-1 { border-top: none}
 .page-nyheder .views-row p { margin-bottom: 0px; }
 .page-nyheder .billede { float: left; clear: both; margin-bottom: 25px; margin-right: 10px; }
 .page-nyheder .views-more-link {float: right; margin-bottom: 10px; }
+
+.views-field-field-traeffetid .item-list li { margin-left: 0; padding-left: 0;}
+
+.page-node #block-system-main .panel-region-stack1 {padding: 0}
+.not-front .panel-region-stack1 .panel-pane { padding: 10px 0px 10px 10px;}
+
+#section-footer { position: relative !important; margin-top: 10px;}
+
+#region-footer-first .region-inner { padding: 5px 5px 10px 12px;  background-image: url(img/footer-bg-odsherred.png); background-repeat: no-repeat; height: 55px }
+
+.ods-logo a { float: right;  width: 136px; height: 66px; text-indent: -10000px;display: block;}
+.ods-link { padding-top: 35px;}
