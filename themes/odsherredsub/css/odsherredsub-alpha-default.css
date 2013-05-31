@@ -180,3 +180,14 @@ a:visited {  color: #000;}
 
 .ods-logo a { float: right;  width: 136px; height: 66px; text-indent: -10000px;display: block;}
 .ods-link { padding-top: 35px;}
+
+#region-sidebar-first ul.menu li {
+  background-image: none;
+  padding-left: 0px;
+}
+#region-sidebar-first ul.menu li:before{
+  content: "› " !important;
+  font-size: 33px;
+  line-height: 14px;
+  padding-left: 0px;
+}
