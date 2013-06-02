@@ -30,7 +30,7 @@ $info = array(
         'bgcontent' => '#ffffff',      //content background
         'content_header' => '#0a5083', //content headers color
         'link' => '#0a5084',           //links color
-        'menu_link' => '#1f1f1f'       //menu link
+        'menu_link' => '#1f1f1f',       //menu link
         'menu_link_hover' => '#1f1f13',//menu link hover color
         'text' => '#272727',           //text color
       ),
