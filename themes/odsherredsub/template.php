@@ -15,12 +15,20 @@
  * implements hook_preprocess_page()
  *
  **/
-function odsherredsub_preprocess_html(&$vars) { 
-  $file = theme_get_setting('theme_color') . '-style.css';
-  drupal_add_css(path_to_theme() . '/css/'. $file, array('group' => CSS_THEME, 'weight' => 115,'browsers' => array(), 'preprocess' => FALSE));
- 
+function odsherredsub_preprocess_html(&$variables) { 
+  //$file = theme_get_setting('theme_color') . '-style.css';
+  //drupal_add_css(path_to_theme() . '/css/'. $file, array('group' => CSS_THEME, 'weight' => 115,'browsers' => array(), 'preprocess' => FALSE));
 }
 
+/**
+ * Implements template_process_page().
+ */
+function odsherredsub_process_page(&$variables, $hook) {
+  // Hook into color.module.
+  if (module_exists('color')) {
+    _color_page_alter($variables);
+  }
+}
 
 
 function odsherredsub_preprocess_page(&$variables, $hook) {

@@ -10,6 +10,7 @@ a:visited {  color: #000;}
 
 .front h1.title { display: none}
 .hbg, #region-sidebar-first .block, .page-node .panel-node, .page-search #region-content, #section-footer .region { background-color: #FFF;}
+.front .pane-kontaktblok .pane-content { background-image: url(img/kontaktboksbg.png); background-repeat: no-repeat; padding-top: 7px;}
 
 .pad20 { padding: 20px}
 .pad15 { padding: 15px}
@@ -29,10 +30,11 @@ a:visited {  color: #000;}
 #section-header, #zone-branding  { 
 	background-image: none !important;
 }
-#section-content { background-image: url(img/section-content-bg.png); background-position: center 20px; background-repeat: no-repeat}
-
+#section-content { background-image: url(img/section-content-bg.png); background-position: center 30px; background-repeat: no-repeat}
+.logo-img { margin-top: 0px !important;}
+.logo-img img { max-height: 85px; width: auto;}
 #region-branding { height: 85px !important;}
-
+#zone-branding {padding-top: 12px !important}
 
 #region-preface-first { margin-bottom: 10px;}
 .view-banner { border: 5px solid #FFF; position: relative; background-color: #FFF;}
@@ -43,9 +45,9 @@ a:visited {  color: #000;}
 	max-width: 100%; height: auto; max-height: 100%;
 	width: 100%; height: 100%; display: block; text-decoration: none; background-clip:padding-box; background-image: url(img/TopImageOverlay.png);}
 
-.view-banner h3 {height: 250px; width: 42%; padding-left: 3%; padding-right: 55%; padding-top: 15px; ;z-index: 200; text-decoration: none; color: #FFF; font-weight: normal; font-style: italic; line-height: 42px;}
+.view-banner h3 {height: 265px; width: 42%; padding-left: 3%; padding-right: 55%; padding-top: 15px; ;z-index: 200; text-decoration: none; color: #FFF !important; font-weight: normal; font-style: italic; line-height: 42px;}
 
-.view-banner h3 a {display: block; text-decoration: none; color: #FFF; font-weight: normal; font-style: italic; line-height: 42px;}
+.view-banner h3 a {display: block; text-decoration: none; color: #FFF !important; font-weight: normal; font-style: italic; line-height: 42px;}
 
 .not-front #region-content .region-content-inner { }
 .node-type-subsite-nyhed .region-content-inner { padding: 10px; background-color: #FFF}
@@ -54,8 +56,6 @@ a:visited {  color: #000;}
 
 .view-banner .views-slideshow-controls-text.views_slideshow_controls_text,
 .view-banner .background-images {display: block !important}
-
-.view-banner #views_slideshow_controls_text_previous_banner-block {}
 
 .view-banner img.banner { max-width: 100%; height: auto; max-height: 100%;}
 
@@ -108,7 +108,6 @@ a:visited {  color: #000;}
 	margin-right: 0;
 	padding-right: 0;
 	border: none;
-	background-image: url(img/search-bg.png);
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 	padding-left: 10px;
@@ -156,8 +155,6 @@ a:visited {  color: #000;}
 	color: #666;
 	font-size: 15px;
 	}
-
-.pane-kontaktblok {padding-top: 12px}
 .pane-node-field-alternativt-billede {float: right; margin-bottom: 15px;}
 
 .media_embed iframe { max-width: 100%; min-width: 100%;}
@@ -181,3 +178,19 @@ a:visited {  color: #000;}
 
 .ods-logo a { float: right;  width: 136px; height: 66px; text-indent: -10000px;display: block;}
 .ods-link { padding-top: 35px;}
+
+#region-sidebar-first ul.menu li {
+  background-image: none;
+  padding-left: 0px;
+}
+#region-sidebar-first ul.menu li:before{
+  content: "› " !important;
+  font-size: 33px;
+  line-height: 14px;
+  padding-left: 0px;
+}
+
+.front .pane-spotbokse { position: absolute;}
+
+#toolbar a { color: #FFF !important}
+

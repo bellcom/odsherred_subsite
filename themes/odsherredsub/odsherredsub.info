@@ -446,3 +446,6 @@ settings[alpha_region_footer_first_css] = ''
 settings[alpha_region_footer_first_equal_height_element] = '0'
 settings[alpha_region_footer_first_equal_height_container] = '0'
 settings[theme_color] = 'blue'
+
+; Add our stylesheet for the Color module to override.
+stylesheets[all][] = 'css/colors.css'

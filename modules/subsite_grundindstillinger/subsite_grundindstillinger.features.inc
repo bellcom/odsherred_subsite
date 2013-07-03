@@ -79,7 +79,7 @@ function subsite_grundindstillinger_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '680',
+          'width' => '690',
           'height' => '235',
         ),
         'weight' => '1',
