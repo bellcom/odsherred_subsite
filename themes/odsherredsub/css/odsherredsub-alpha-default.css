@@ -245,4 +245,4 @@ padding-top: 10px ;}
 #region-sidebar-first ul.menu li ul li { background-image: none !important}
 
 .not-front .view-kontaktblok { margin-top: 20px; }
-.not-front .view-kontaktblok .hbg { padding: 5px; }
+.not-front .view-kontaktblok .hbg { padding: 5px; min-height: 187px; margin-top: 1px;  }
