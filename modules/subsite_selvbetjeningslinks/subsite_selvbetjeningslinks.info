@@ -20,4 +20,5 @@ features[variable][] = menu_parent_selv
 features[variable][] = node_options_selv
 features[variable][] = node_preview_selv
 features[variable][] = node_submitted_selv
+features[views_view][] = selvbetjening
 features_exclude[dependencies][ctools] = ctools

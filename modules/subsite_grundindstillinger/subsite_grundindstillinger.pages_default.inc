@@ -265,16 +265,18 @@ function subsite_grundindstillinger_default_page_manager_handlers() {
     $pane->pid = 'new-7';
     $pane->panel = 'stack2';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_mediafile';
+    $pane->subtype = 'node:field_filer';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'title',
-      'formatter' => 'file_default',
+      'formatter' => 'file_rendered',
       'delta_limit' => '0',
       'delta_offset' => '0',
       'delta_reversed' => 0,
-      'formatter_settings' => array(),
+      'formatter_settings' => array(
+        'file_view_mode' => 'default',
+      ),
       'context' => 'argument_entity_id:node_1',
       'override_title' => 1,
       'override_title_text' => 'Hent...',

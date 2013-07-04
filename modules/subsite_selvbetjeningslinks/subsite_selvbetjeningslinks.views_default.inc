@@ -22,7 +22,7 @@ function subsite_selvbetjeningslinks_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Selvbetjening';
+  $handler->display->display_options['title'] = 'Se mere her hvis du vil...';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'mere';
   $handler->display->display_options['access']['type'] = 'perm';
@@ -129,7 +129,7 @@ function subsite_selvbetjeningslinks_views_default_views() {
   );
   $translatables['selvbetjening'] = array(
     t('Master'),
-    t('Selvbetjening'),
+    t('Se mere her hvis du vil...'),
     t('mere'),
     t('Udfør'),
     t('Gendan'),
