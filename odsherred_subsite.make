@@ -81,7 +81,7 @@ projects[link][subdir] = "contrib"
 projects[link][version] = "1.0"
 
 projects[linkit][subdir] = "contrib"
-projects[linkit][version] = "2.5"
+projects[linkit][version] = "2.6"
 
 projects[media][subdir] = "contrib"
 projects[media][version] = "2.0-unstable7"
