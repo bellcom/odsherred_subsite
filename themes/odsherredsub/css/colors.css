@@ -1,8 +1,6 @@
 #page { 
   background-image: url(../images/ods-sub-transp-bg.png); 
-  background-repeat: repeat-x;
-  padding-top: 12px;
-}
+  background-repeat: repeat-x;}
 body {
   background-image: none !important; 
   background-color: #f3f1ee !important;

@@ -3,19 +3,18 @@ jQuery(document).ready(function($){
       height = $(window).height(),
       page1 = '#'+Drupal.settings.slide_menu_links.slide_left_text,
       page2 = '#'+Drupal.settings.slide_menu_links.slide_right_text,
-      currentPage = "#page_1",
+      currentPage = "#page",
       left_link = Drupal.settings.slide_menu_links.slide_left_link,
       right_link = Drupal.settings.slide_menu_links.slide_right_link,
       subsite = Drupal.settings.slide_menu_links.slide_subsite,
       show_links = Drupal.settings.slide_menu_links.slide_show_links,
-      home_link = window.location.origin,
+      home_link = 'http://' + window.location.host,
       backDirection = '',
       page_waiting = Drupal.settings.slide_menu_links.slide_page_waiting;
 
-  $('#page').attr('id', 'page_1');
   if (Drupal.settings.slide_menu_links.slide_left_link !== '<notset>' && show_links === 1)
   {
-    $('<div data-role="page" id="page_2">').insertBefore('#page_1');
+    $('<div data-role="page" id="page_2">').insertBefore('#page');
     $('#page_2').css({ "display" : "none"  });
     if (left_link.indexOf('http://') === -1 )
     {
@@ -26,12 +25,12 @@ jQuery(document).ready(function($){
       $('#page_2').html(page_waiting);
     }
     var sliderLeftHtml = '<div class="slider slider_left"><a class="slider_link" href="'+page1+'"><i class="link"></i></a></div>';
-    $(sliderLeftHtml).insertBefore('#page_1');
+    $(sliderLeftHtml).insertBefore('#page');
   }
 
   if (Drupal.settings.slide_menu_links.slide_right_link !== '<notset>' && show_links === 1)
   {
-    $('<div data-role="page" id="page_3">').insertBefore('#page_1');
+    $('<div data-role="page" id="page_3">').insertBefore('#page');
     $('#page_3').css({ "display" : "none"  });
     if (right_link.indexOf('http://') === -1 )
     {
@@ -42,7 +41,7 @@ jQuery(document).ready(function($){
       $('#page_3').html(page_waiting);
     }
     var sliderRightHtml = '<div class="slider slider_right"><a class="slider_link" href="'+page2+'"><i class="link"></i></a></div>';
-    $(sliderRightHtml).insertBefore('#page_1');
+    $(sliderRightHtml).insertBefore('#page');
   }
 
   if(location.hash) 
@@ -52,15 +51,19 @@ jQuery(document).ready(function($){
 
   if(subsite === 1)
   {
-    $('.slider_right').fadeOut();
-    $('.slider_left').addClass('slider_back');
-    $sliderLink = $('.slider_back').find('a');
-    $sliderLink.attr('href', '#home');
-    backDirection = 'right';
+    if($('.slider_left').length === 0){
+      var sliderLeftHtml = '<div class="slider slider_left"><a class="slider_link" href="'+page1+'"><i class="link"></i></a></div>';
+      $(sliderLeftHtml).insertBefore('#page');
+      $('.slider_right').fadeOut();
+      $('.slider_left').addClass('slider_back');
+      $sliderLink = $('.slider_back').find('a');
+      $sliderLink.attr('href', '#home');
+      backDirection = 'right';
+    }
   }
   
   function slidePage(from, to, direction, pageUrl){
-    var pageTop = $('#page_1').position().top;
+    var pageTop = $('#page').position().top;
     var $to = $(to);
     var $currentPage = $(currentPage);
 
@@ -115,7 +118,7 @@ jQuery(document).ready(function($){
         $sliderLink = $('.slider_back').find('a');
         $sliderLink.attr('href', '#');
         backDirection = 'left';
-        slidePage('#page_1', '#page_2', 'right', left_link);
+        slidePage('#page', '#page_2', 'right', left_link);
         $('.vegas-background').fadeOut();
         if($('.pane-aktuelt-panel-pane-3').length !== 0)
         {
@@ -129,7 +132,7 @@ jQuery(document).ready(function($){
         $sliderLink = $('.slider_back').find('a');
         $sliderLink.attr('href', '#');
         backDirection = 'right';
-        slidePage('#page_1', '#page_3', 'left', right_link);
+        slidePage('#page', '#page_3', 'left', right_link);
         $('.vegas-background').fadeOut();
         if($('.pane-aktuelt-panel-pane-3').length !== 0)
         {
@@ -139,8 +142,7 @@ jQuery(document).ready(function($){
 
       case '#home':
         $('.slider').fadeOut();
-        slidePage('#page_1', '#page_2', 'right', home_link);
-
+        slidePage('#page', '#page_2', 'right', home_link);
         break;
 
       default:
@@ -152,7 +154,7 @@ jQuery(document).ready(function($){
           $sliderLink.attr('href', page1);
           $sliderLink = $('.slider_right').find('a');
           $sliderLink.attr('href', page2);
-          slidePage('#page_3', '#page_1', backDirection);
+          slidePage('#page_3', '#page', backDirection);
           $('.vegas-background').fadeIn();
           if($('.pane-aktuelt-panel-pane-3').length !== 0)
           {

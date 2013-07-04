@@ -54,7 +54,7 @@ function subsite_grundindstillinger_ckeditor_profile_defaults() {
         'css_path' => '',
         'css_style' => 'theme',
         'styles_path' => '',
-        'filebrowser' => 'none',
+        'filebrowser' => 'imce',
         'filebrowser_image' => '',
         'filebrowser_flash' => '',
         'UserFilesPath' => '%b%f/',
@@ -144,7 +144,7 @@ function subsite_grundindstillinger_ckeditor_profile_defaults() {
         'css_path' => '',
         'css_style' => 'theme',
         'styles_path' => '',
-        'filebrowser' => 'none',
+        'filebrowser' => 'imce',
         'filebrowser_image' => '',
         'filebrowser_flash' => '',
         'UserFilesPath' => '%b%f/',
@@ -173,6 +173,18 @@ function subsite_grundindstillinger_ckeditor_profile_defaults() {
               ),
             ),
             'default' => 't',
+          ),
+          'imce' => array(
+            'name' => 'imce',
+            'desc' => 'Plugin for inserting files from imce without image dialog',
+            'path' => '%plugin_dir%imce/',
+            'buttons' => array(
+              'IMCE' => array(
+                'label' => 'IMCE',
+                'icon' => 'images/icon.png',
+              ),
+            ),
+            'default' => 'f',
           ),
           'linkit' => array(
             'name' => 'linkit',
@@ -293,12 +305,11 @@ function subsite_grundindstillinger_ckeditor_profile_defaults() {
     [\'Table\',\'HorizontalRule\',\'SpecialChar\'],
     [\'Maximize\',\'ShowBlocks\',\'Media\',\'Styles\'],
     \'/\',
-    
     [\'Bold\',\'Italic\',\'Underline\',\'Strike\',\'-\',\'Subscript\',\'Superscript\'],
     [\'NumberedList\',\'BulletedList\',\'-\',\'Outdent\',\'Indent\',\'Blockquote\'],
     [\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\',\'JustifyBlock\',\'-\',\'BidiRtl\',\'BidiLtr\',\'linkit\'],
     [\'Link\',\'Unlink\',\'Anchor\'],
-    [\'DrupalBreak\']
+    [\'DrupalBreak\',\'IMCE\']
 ]',
         'expand' => 't',
         'width' => '100%',
@@ -334,6 +345,13 @@ function subsite_grundindstillinger_ckeditor_profile_defaults() {
         'theme_config_js' => 't',
         'js_conf' => '',
         'loadPlugins' => array(
+          'counter' => array(
+            'name' => 'counter',
+            'desc' => 'Plugin to count symbols, symbols without blanks and words',
+            'path' => '%plugin_dir%counter/',
+            'buttons' => FALSE,
+            'default' => 'f',
+          ),
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',
             'desc' => 'Plugin for inserting Drupal teaser and page breaks.',
@@ -345,6 +363,18 @@ function subsite_grundindstillinger_ckeditor_profile_defaults() {
               ),
             ),
             'default' => 't',
+          ),
+          'imce' => array(
+            'name' => 'imce',
+            'desc' => 'Plugin for inserting files from imce without image dialog',
+            'path' => '%plugin_dir%imce/',
+            'buttons' => array(
+              'IMCE' => array(
+                'label' => 'IMCE',
+                'icon' => 'images/icon.png',
+              ),
+            ),
+            'default' => 'f',
           ),
           'linkit' => array(
             'name' => 'linkit',

@@ -27,7 +27,7 @@ function subsite_grundindstillinger_default_linkit_profiles() {
       ),
       'entity:file' => array(
         'weight' => '0',
-        'enabled' => 1,
+        'enabled' => 0,
       ),
       'entity:user' => array(
         'weight' => '0',
@@ -61,8 +61,8 @@ function subsite_grundindstillinger_default_linkit_profiles() {
       'show_scheme' => 0,
       'group_by_scheme' => 0,
       'image_extra_info' => array(
-        'thumbnail' => 'thumbnail',
-        'dimensions' => 'dimensions',
+        'thumbnail' => 0,
+        'dimensions' => 0,
       ),
     ),
     'entity:taxonomy_term' => array(
@@ -82,6 +82,9 @@ function subsite_grundindstillinger_default_linkit_profiles() {
     ),
     'entity:user' => array(
       'result_description' => '',
+    ),
+    'imce' => array(
+      'use_imce' => 0,
     ),
     'autocomplete' => array(
       'charLimit' => 3,

@@ -9,7 +9,8 @@ a:visited {  color: #000;}
 
 
 .front h1.title { display: none}
-.hbg, #region-sidebar-first .block, .page-node .panel-node, .page-search #region-content, #section-footer .region { background-color: #FFF;}
+.hbg, #region-sidebar-first .block, .page-node .panel-node, .page-search #region-content, #section-footer .region, .page-node-add #region-content { 
+	background-color: #FFF;}
 .front .pane-kontaktblok .pane-content { background-image: url(img/kontaktboksbg.png); background-repeat: no-repeat; padding-top: 7px;}
 
 .pad20 { padding: 20px}
@@ -30,11 +31,9 @@ a:visited {  color: #000;}
 #section-header, #zone-branding  { 
 	background-image: none !important;
 }
-#section-content { background-image: url(img/section-content-bg.png); background-position: center 30px; background-repeat: no-repeat}
+#section-content { background-image: url(img/section-content-bg.png); background-position: center 20px; background-repeat: no-repeat}
 .logo-img { margin-top: 0px !important;}
-.logo-img img { max-height: 85px; width: auto;}
 #region-branding { height: 85px !important;}
-#zone-branding {padding-top: 12px !important}
 
 #region-preface-first { margin-bottom: 10px;}
 .view-banner { border: 5px solid #FFF; position: relative; background-color: #FFF;}
@@ -194,3 +193,5 @@ a:visited {  color: #000;}
 
 #toolbar a { color: #FFF !important}
 
+#zone-content {
+padding-top: 10px ;}

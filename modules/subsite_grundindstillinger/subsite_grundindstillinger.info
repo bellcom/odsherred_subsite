@@ -38,6 +38,7 @@ dependencies[] = pathauto
 dependencies[] = plupload
 dependencies[] = search
 dependencies[] = site_map
+dependencies[] = slide_menu_links
 dependencies[] = strongarm
 dependencies[] = subsite_permissions
 dependencies[] = taxonomy
