@@ -9,8 +9,11 @@ a:visited {  color: #000;}
 
 
 .front h1.title { display: none}
-.hbg, #region-sidebar-first .block, .page-node .panel-node, .page-search #region-content, #section-footer .region, .page-node-add #region-content { 
+.hbg, #region-sidebar-first .block, .page-node .panel-node, .page-search #region-content, #section-footer .region { 
 	background-color: #FFF;}
+.page-node-add #region-content .region-inner { 
+	background-color: #FFF; padding: 10px;}
+
 .front .pane-kontaktblok .pane-content { background-image: url(img/kontaktboksbg.png); background-repeat: no-repeat; padding-top: 7px;}
 
 .pad20 { padding: 20px}
