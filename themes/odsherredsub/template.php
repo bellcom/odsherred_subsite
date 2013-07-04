@@ -16,6 +16,7 @@
  *
  **/
 function odsherredsub_preprocess_html(&$variables) { 
+  drupal_add_css(path_to_theme() . '/css/font-awesome/css/font-awesome.min.css');
   //$file = theme_get_setting('theme_color') . '-style.css';
   //drupal_add_css(path_to_theme() . '/css/'. $file, array('group' => CSS_THEME, 'weight' => 115,'browsers' => array(), 'preprocess' => FALSE));
 }
