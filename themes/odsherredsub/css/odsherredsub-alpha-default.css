@@ -147,8 +147,8 @@ a:visited {  color: #000;}
 .view-spotbokse .ekstratekst { position: absolute; bottom: 5px; background-image:url(img/spot-tekst-bg.png); width: 210px}
 .view-spotbokse .ekstratekst .titel { display: block; font-size: 14px; border-top: 4px solid #00538F; padding: 5px 10px; }
 .view-spotbokse .ekstratekst .resten { display: block; padding: 0 10px 5px; }
-
-.front .view-spotbokse .billede { position: absolute ;}
+ 
+.view-spotbokse .billede { position: absolute ;}
 .front .view-spotbokse .ekstratekst { bottom: 0px;} 
 .pane-node-field-field-resume-long {
 	font-style: italic;
@@ -215,3 +215,10 @@ padding-top: 10px ;}
 
 #region-sidebar-first ul.menu li.expanded, 
 #region-sidebar-first ul.menu li ul li { background-image: none !important}
+
+#region-sidebar-first ul.menu li ul li:before {
+content: "· " !important;
+} 
+
+.not-front .view-kontaktblok { margin-top: 20px; }
+.not-front .view-kontaktblok .hbg { padding: 5px; }
