@@ -1,7 +1,6 @@
 #page { 
   background-image: url(../images/ods-sub-transp-bg.png); 
-  background-repeat: repeat-x;
-}
+  background-repeat: repeat-x;}
 body {
   background-image: none !important; 
   background-color: #f3f1ee !important;
@@ -20,8 +19,12 @@ h6.site-slogan{
 #region-sidebar-first .block, .page-node .panel-node, .page-search #region-content {
     background-image: none !important;
 }
-h2, h3 { 
+h2, h3, #region-sidebar-first ul.menu li:before{ 
   color: #0a5083 !important;
+}
+
+.view-spotbokse .ekstratekst .titel{
+  border-top-color: #0a5083 !important;
 }
 
 a, a:visited { 
