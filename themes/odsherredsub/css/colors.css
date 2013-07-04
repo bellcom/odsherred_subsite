@@ -12,7 +12,7 @@ body {
 h6.site-slogan{
   color: #0a5081;
 }
-.hbg, #region-sidebar-first .block, .page-node .panel-node, .page-search #region-content, #section-footer .region, .view-banner {
+.hbg, #region-sidebar-first .block, .page-node .panel-node, #region-content, #section-footer .region, .view-banner {
     background-color: #ffffff !important;
     border-color: #ffffff !important;
 }
