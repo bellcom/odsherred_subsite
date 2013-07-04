@@ -212,3 +212,6 @@ padding-top: 10px ;}
     float: left;
     width: 50%;
 }
+
+#region-sidebar-first ul.menu li.expanded, 
+#region-sidebar-first ul.menu li ul li { background-image: none !important}
