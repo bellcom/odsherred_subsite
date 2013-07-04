@@ -19,7 +19,7 @@ function subsite_grundindstillinger_default_linkit_profiles() {
     'plugins' => array(
       'entity:taxonomy_term' => array(
         'weight' => '0',
-        'enabled' => 0,
+        'enabled' => 1,
       ),
       'entity:node' => array(
         'weight' => '0',
@@ -27,7 +27,7 @@ function subsite_grundindstillinger_default_linkit_profiles() {
       ),
       'entity:file' => array(
         'weight' => '0',
-        'enabled' => 0,
+        'enabled' => 1,
       ),
       'entity:user' => array(
         'weight' => '0',
@@ -47,22 +47,24 @@ function subsite_grundindstillinger_default_linkit_profiles() {
         'velkomst' => 0,
       ),
       'group_by_bundle' => 0,
+      'reverse_menu_trail' => 0,
       'include_unpublished' => 0,
     ),
     'entity:file' => array(
       'result_description' => '',
       'bundles' => array(
+        'image' => 'image',
         'document' => 'document',
-        'image' => 0,
         'video' => 0,
         'audio' => 0,
       ),
       'group_by_bundle' => 0,
-      'show_scheme' => 0,
+      'reverse_menu_trail' => 0,
+      'show_scheme' => 1,
       'group_by_scheme' => 0,
       'image_extra_info' => array(
-        'thumbnail' => 0,
-        'dimensions' => 0,
+        'thumbnail' => 'thumbnail',
+        'dimensions' => 'dimensions',
       ),
     ),
     'entity:taxonomy_term' => array(
@@ -79,9 +81,11 @@ function subsite_grundindstillinger_default_linkit_profiles() {
         'os2web_taxonomies_tax_user_pos' => 0,
       ),
       'group_by_bundle' => 0,
+      'reverse_menu_trail' => 0,
     ),
     'entity:user' => array(
       'result_description' => '',
+      'reverse_menu_trail' => 0,
     ),
     'imce' => array(
       'use_imce' => 0,

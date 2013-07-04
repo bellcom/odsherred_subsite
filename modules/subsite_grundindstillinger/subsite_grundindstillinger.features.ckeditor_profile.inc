@@ -379,7 +379,7 @@ function subsite_grundindstillinger_ckeditor_profile_defaults() {
           'linkit' => array(
             'name' => 'linkit',
             'desc' => 'Understøttelse af Linkit-modulet',
-            'path' => '%base_path%sites/all/modules/contrib/linkit/editors/ckeditor/',
+            'path' => '%base_path%profiles/odsherred_subsite/modules/contrib/linkit/editors/ckeditor/',
             'buttons' => array(
               'linkit' => array(
                 'label' => 'Linkit',
