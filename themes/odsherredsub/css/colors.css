@@ -19,8 +19,12 @@ h6.site-slogan{
 #region-sidebar-first .block, .page-node .panel-node, .page-search #region-content {
     background-image: none !important;
 }
-h2, h3, #region-sidebar-first ul.menu li:before { 
+h2, h3, #region-sidebar-first ul.menu li:before{ 
   color: #0a5083 !important;
+}
+
+.view-spotbokse .ekstratekst .titel{
+  border-top-color: #0a5083 !important;
 }
 
 a, a:visited { 
