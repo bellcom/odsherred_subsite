@@ -246,3 +246,8 @@ padding-top: 10px ;}
 
 .not-front .view-kontaktblok { margin-top: 20px; }
 .not-front .view-kontaktblok .hbg { padding: 5px; min-height: 187px; margin-top: 1px;  }
+
+.views-slideshow-cycle-main-frame,
+.views-slideshow-cycle-main-frame-row { height: 280px; width: 930px;}
+}
+
