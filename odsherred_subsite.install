@@ -37,4 +37,10 @@ function odsherred_subsite_install() {
   variable_set('date_default_timezone', "Europe/Berlin");
   variable_set('date_first_day', "1");
   variable_set('configurable_timezones', "0");
+
+  // Set collation for node table, utf8_general_ci thinks that A = Å
+  db_query('ALTER TABLE `node` CONVERT TO CHARACTER SET utf8 COLLATE utf8_danish_ci');
+
 }
+
+
