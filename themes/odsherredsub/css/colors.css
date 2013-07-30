@@ -12,7 +12,7 @@ body {
 h6.site-slogan{
   color: #0a5081;
 }
-.hbg, #region-sidebar-first .block, .page-node .panel-node, #section-footer .region {
+.hbg, #region-sidebar-first .block, .page-node .panel-node, #section-footer .region, .not-front #block-system-main {
     background-color: #ffffff !important;
     border-color: #ffffff !important;
 }
@@ -29,6 +29,7 @@ h2, h3, #region-sidebar-first ul.menu li:before{
 
 a, a:visited { 
      color: #0a5084 !important; 
+     text-decoration: none;
 }
 
 #region-sidebar-first ul.menu li a {
@@ -41,6 +42,8 @@ a, a:visited {
 .view-spotbokse .ekstratekst .titel {
     border-top: 4px solid #0a5083 !important;
 }
+
+
 /* menu */ 
 
 /*#region-sidebar-first ul.menu li {

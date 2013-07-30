@@ -12,7 +12,7 @@
 
 a,
 a:link,
-a:visited {  color: #000;}
+a:visited {  color: #000; text-decoration: none !important;}
 
 
 .front h1.title { display: none}
