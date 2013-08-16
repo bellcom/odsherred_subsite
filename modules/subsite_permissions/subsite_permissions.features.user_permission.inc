@@ -90,7 +90,6 @@ function subsite_permissions_user_default_permissions() {
     'name' => 'administer nodes',
     'roles' => array(
       'administrator' => 'administrator',
-      'super bruger' => 'super bruger',
     ),
     'module' => 'node',
   );
@@ -139,7 +138,9 @@ function subsite_permissions_user_default_permissions() {
   $permissions['create banner content'] = array(
     'name' => 'create banner content',
     'roles' => array(
+      'administrator' => 'administrator',
       'let bruger' => 'let bruger',
+      'super bruger' => 'super bruger',
     ),
     'module' => 'node',
   );
@@ -150,6 +151,7 @@ function subsite_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'let bruger' => 'let bruger',
+      'super bruger' => 'super bruger',
     ),
     'module' => 'node',
   );
@@ -158,7 +160,9 @@ function subsite_permissions_user_default_permissions() {
   $permissions['create subsite_nyhed content'] = array(
     'name' => 'create subsite_nyhed content',
     'roles' => array(
+      'administrator' => 'administrator',
       'let bruger' => 'let bruger',
+      'super bruger' => 'super bruger',
     ),
     'module' => 'node',
   );
@@ -174,7 +178,9 @@ function subsite_permissions_user_default_permissions() {
   $permissions['delete any banner content'] = array(
     'name' => 'delete any banner content',
     'roles' => array(
+      'administrator' => 'administrator',
       'let bruger' => 'let bruger',
+      'super bruger' => 'super bruger',
     ),
     'module' => 'node',
   );
@@ -184,7 +190,7 @@ function subsite_permissions_user_default_permissions() {
     'name' => 'delete any page content',
     'roles' => array(
       'administrator' => 'administrator',
-      'let bruger' => 'let bruger',
+      'super bruger' => 'super bruger',
     ),
     'module' => 'node',
   );
@@ -193,7 +199,7 @@ function subsite_permissions_user_default_permissions() {
   $permissions['delete any subsite_nyhed content'] = array(
     'name' => 'delete any subsite_nyhed content',
     'roles' => array(
-      'let bruger' => 'let bruger',
+      'super bruger' => 'super bruger',
     ),
     'module' => 'node',
   );
@@ -209,7 +215,9 @@ function subsite_permissions_user_default_permissions() {
   $permissions['delete own banner content'] = array(
     'name' => 'delete own banner content',
     'roles' => array(
+      'administrator' => 'administrator',
       'let bruger' => 'let bruger',
+      'super bruger' => 'super bruger',
     ),
     'module' => 'node',
   );
@@ -230,6 +238,7 @@ function subsite_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'let bruger' => 'let bruger',
+      'super bruger' => 'super bruger',
     ),
     'module' => 'node',
   );
@@ -239,6 +248,7 @@ function subsite_permissions_user_default_permissions() {
     'name' => 'delete own subsite_nyhed content',
     'roles' => array(
       'let bruger' => 'let bruger',
+      'super bruger' => 'super bruger',
     ),
     'module' => 'node',
   );
@@ -254,7 +264,9 @@ function subsite_permissions_user_default_permissions() {
   $permissions['edit any banner content'] = array(
     'name' => 'edit any banner content',
     'roles' => array(
+      'administrator' => 'administrator',
       'let bruger' => 'let bruger',
+      'super bruger' => 'super bruger',
     ),
     'module' => 'node',
   );
@@ -265,6 +277,7 @@ function subsite_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'let bruger' => 'let bruger',
+      'super bruger' => 'super bruger',
     ),
     'module' => 'node',
   );
@@ -274,6 +287,7 @@ function subsite_permissions_user_default_permissions() {
     'name' => 'edit any subsite_nyhed content',
     'roles' => array(
       'let bruger' => 'let bruger',
+      'super bruger' => 'super bruger',
     ),
     'module' => 'node',
   );
@@ -283,6 +297,7 @@ function subsite_permissions_user_default_permissions() {
     'name' => 'edit any velkomst content',
     'roles' => array(
       'let bruger' => 'let bruger',
+      'super bruger' => 'super bruger',
     ),
     'module' => 'node',
   );
@@ -291,7 +306,9 @@ function subsite_permissions_user_default_permissions() {
   $permissions['edit own banner content'] = array(
     'name' => 'edit own banner content',
     'roles' => array(
+      'administrator' => 'administrator',
       'let bruger' => 'let bruger',
+      'super bruger' => 'super bruger',
     ),
     'module' => 'node',
   );
@@ -302,6 +319,7 @@ function subsite_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'let bruger' => 'let bruger',
+      'super bruger' => 'super bruger',
     ),
     'module' => 'node',
   );
@@ -310,7 +328,9 @@ function subsite_permissions_user_default_permissions() {
   $permissions['edit own subsite_nyhed content'] = array(
     'name' => 'edit own subsite_nyhed content',
     'roles' => array(
+      'administrator' => 'administrator',
       'let bruger' => 'let bruger',
+      'super bruger' => 'super bruger',
     ),
     'module' => 'node',
   );

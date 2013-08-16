@@ -41,7 +41,7 @@ a:visited {  color: #000; text-decoration: none !important;}
 #section-header, #zone-branding  { 
 	background-image: none !important;
 }
-#section-content { background-image: url(img/section-content-bg.png); background-position: center 20px; background-repeat: no-repeat}
+#section-content { background-image: url(img/section-content-bg.png); background-position: center 12px; background-repeat: no-repeat}
 .logo-img { margin-top: 0px !important;}
 #region-branding { height: 85px !important;}
 

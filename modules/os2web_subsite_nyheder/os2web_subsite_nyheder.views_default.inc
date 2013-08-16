@@ -23,6 +23,7 @@ function os2web_subsite_nyheder_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Nyheder';
+  $handler->display->display_options['css_class'] = 'pad10';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'mere';
   $handler->display->display_options['access']['type'] = 'perm';
