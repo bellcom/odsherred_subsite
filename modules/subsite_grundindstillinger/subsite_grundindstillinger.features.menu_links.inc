@@ -28,6 +28,24 @@ function subsite_grundindstillinger_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '0',
   );
+  // Exported menu link: user-menu:http://www.adgangforalle.dk/
+  $menu_links['user-menu:http://www.adgangforalle.dk/'] = array(
+    'menu_name' => 'user-menu',
+    'link_path' => 'http://www.adgangforalle.dk/',
+    'router_path' => '',
+    'link_title' => 'Læs højt',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => '0',
+    'external' => '1',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '0',
+  );
   // Exported menu link: user-menu:sitemap
   $menu_links['user-menu:sitemap'] = array(
     'menu_name' => 'user-menu',
@@ -49,6 +67,7 @@ function subsite_grundindstillinger_menu_default_menu_links() {
   // Translatables
   // Included for use with string extractors like potx.
   t('A-Å Indeks');
+  t('Læs højt');
   t('Sitemap');
 
 
