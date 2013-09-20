@@ -16,6 +16,9 @@ h6.site-slogan{
     background-color: #ffffff !important;
     border-color: #ffffff !important;
 }
+
+.node-type-page #block-system-main { background-color: transparent !important}
+
 #region-sidebar-first .block, .page-node .panel-node, .page-search #region-content {
     background-image: none !important;
 }
