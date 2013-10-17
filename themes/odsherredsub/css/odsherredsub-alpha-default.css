@@ -9,12 +9,12 @@
   font-weight: normal;
   font-style: normal;
 }
-
+body { font-size: 14px;}
 a,
 a:link,
 a:visited {  color: #000; text-decoration: none !important;}
-
-
+h2 { font-size: 25px;}
+.hbg p { font-size: 14px;}
 .front h1.title { display: none}
 .hbg, #region-sidebar-first .block, .page-node .panel-node, .page-search #region-content, #section-footer .region { 
 	background-color: #FFF;}
