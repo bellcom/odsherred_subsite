@@ -234,7 +234,7 @@ function subsite_spotbokse_field_default_fields() {
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
-        'min_resolution' => '210x187',
+        'min_resolution' => '212x187',
         'title_field' => 1,
         'title_field_required' => 1,
         'user_register_form' => FALSE,

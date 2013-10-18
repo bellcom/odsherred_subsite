@@ -90,6 +90,7 @@ function subsite_permissions_user_default_permissions() {
     'name' => 'administer nodes',
     'roles' => array(
       'administrator' => 'administrator',
+      'super bruger' => 'super bruger',
     ),
     'module' => 'node',
   );

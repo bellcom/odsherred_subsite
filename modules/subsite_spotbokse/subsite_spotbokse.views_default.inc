@@ -72,7 +72,7 @@ function subsite_spotbokse_views_default_views() {
   $handler->display->display_options['fields']['field_spotbillede']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_spotbillede']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_spotbillede']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'spotboks',
     'image_link' => '',
   );
   /* Felt: Indhold: Titel */
@@ -201,7 +201,7 @@ function subsite_spotbokse_views_default_views() {
   $handler->display->display_options['fields']['field_spotbillede']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_spotbillede']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_spotbillede']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'spotboks',
     'image_link' => '',
   );
   /* Felt: Indhold: Titel */

@@ -18,6 +18,7 @@ features[features_api][] = api:1
 features[field][] = node-spotboks-field_ekstra_tekst
 features[field][] = node-spotboks-field_link_til_side
 features[field][] = node-spotboks-field_spotbillede
+features[image][] = spotboks
 features[node][] = spotboks
 features[variable][] = field_bundle_settings_node__spotboks
 features[variable][] = language_content_type_spotboks
