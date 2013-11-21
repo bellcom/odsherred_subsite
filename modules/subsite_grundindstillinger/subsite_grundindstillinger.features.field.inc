@@ -475,6 +475,20 @@ function subsite_grundindstillinger_field_default_fields() {
           'croparea' => '500x500',
           'enforce_minimum' => 1,
           'enforce_ratio' => 1,
+          'filefield_sources' => array(
+            'filefield_sources' => array(),
+            'source_attach' => array(
+              'absolute' => 0,
+              'attach_mode' => 'move',
+              'path' => 'file_attach',
+            ),
+            'source_imce' => array(
+              'imce_mode' => 0,
+            ),
+            'source_reference' => array(
+              'autocomplete' => '0',
+            ),
+          ),
           'preview_image_style' => 'indholdsside',
           'progress_indicator' => 'throbber',
           'resolution' => '690x235',

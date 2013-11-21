@@ -216,6 +216,13 @@ function subsite_grundindstillinger_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'error_level';
+  $strongarm->value = '0';
+  $export['error_level'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'extlink_alert';
   $strongarm->value = 0;
   $export['extlink_alert'] = $strongarm;

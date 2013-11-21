@@ -13,7 +13,7 @@ body { font-size: 14px;}
 a,
 a:link,
 a:visited {  color: #000; text-decoration: none !important;}
-h2 { font-size: 25px;}
+h2 { font-size: 20px;}
 .hbg p { font-size: 14px;}
 .front h1.title { display: none}
 .hbg, #region-sidebar-first .block, .page-node .panel-node, .page-search #region-content, #section-footer .region { 
@@ -146,6 +146,7 @@ h2 { font-size: 25px;}
 
 .view-spotbokse .views-row { position: relative ; font-size: 12px; width: 212px; height: 187px;}
 .pane-views-panes .view-spotbokse .views-row { float: left; margin: 20px 10px; padding: 5px;background-color: #FFF;}
+.pane-views-panes .view-spotbokse .views-row.views-row-last { margin-right: 6px; }
 .pane-views-panes .view-spotbokse .views-row-1, .pane-views-panes .view-spotbokse .views-row-4, .pane-views-panes .view-spotbokse .views-row-7, .pane-views-panes .view-spotbokse .views-row-10 { margin-left: 0px}
 .pane-views-panes .view-spotbokse .views-row-3, .pane-views-panes .view-spotbokse .views-row-6, .pane-views-panes .view-spotbokse .views-row-9, .pane-views-panes .view-spotbokse .views-row-12 { margin-right: 0px}
 .view-spotbokse .resten a:link,
@@ -254,3 +255,5 @@ padding-top: 10px ;}
 .borger_dk_header { padding: 10px;}
 
 .view-id-seneste_ny .views-field-title { font-size: 14px; font-weight: bold;}
+
+#block-gtranslate-gtranslate .content { padding-left: 15px; padding-bottom: 15px; padding-top: 15px;}
