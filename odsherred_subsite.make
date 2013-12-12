@@ -20,6 +20,12 @@ projects[bedstpaanettet][version] = "1.0"
 projects[better_formats][subdir] = "contrib"
 projects[better_formats][version] = "1.0-beta1"
 
+projects[bulk_media_upload][subdir] = "contrib"
+projects[bulk_media_upload][version] = "1.x-dev"
+
+projects[ckeditor][subdir] = "contrib"
+projects[ckeditor][version] = "1.13"
+
 projects[context][subdir] = "contrib"
 projects[context][version] = "3.0-beta6"
 
@@ -38,8 +44,20 @@ projects[eim][version] = "1.2"
 projects[entity][subdir] = "contrib"
 projects[entity][version] = "1.0"
 
+projects[entityreference][subdir] = "contrib"
+projects[entityreference][version] = "1.1"
+
+projects[extlink][subdir] = "contrib"
+projects[extlink][version] = "1.12"
+
 projects[features][subdir] = "contrib"
 projects[features][version] = "2.0-beta1"
+
+projects[feeds][subdir] = "contrib"
+projects[feeds][version] = "2.0-alpha8"
+
+projects[feeds_xpathparser][subdir] = "contrib"
+projects[feeds_xpathparser][version] = "1.0-beta4"
 
 projects[field_group][subdir] = "contrib"
 projects[field_group][version] = "1.1"
@@ -50,8 +68,17 @@ projects[field_slideshow][version] = "1.81"
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][version] = "2.0-unstable7"
 
+projects[filefield_sources][subdir] = "contrib"
+projects[filefield_sources][version] = "1.8"
+
+projects[filefield_sources_plupload][subdir] = "contrib"
+projects[filefield_sources_plupload][version] = "1.0"
+
 projects[ftools][subdir] = "contrib"
 projects[ftools][version] = "1.6"
+
+projects[gtranslate][subdir] = "contrib"
+projects[gtranslate][version] = "1.9"
 
 projects[i18n][subdir] = "contrib"
 projects[i18n][version] = "1.5"
@@ -83,6 +110,15 @@ projects[link][version] = "1.0"
 projects[linkit][subdir] = "contrib"
 projects[linkit][version] = "2.6"
 
+projects[email][subdir] = "contrib"
+projects[email][version] = "1.2"
+
+projects[publishcontent][subdir] = "contrib"
+projects[publishcontent][version] = "1.2"
+
+projects[site_map][subdir] = "contrib"
+projects[site_map][version] = "1.0"
+
 projects[media][subdir] = "contrib"
 projects[media][version] = "2.0-unstable7"
 projects[media][patch][] = "http://drupal.org/files/media-media_browser-preview_javascript_incompatibility-1743040.patch"
@@ -95,6 +131,9 @@ projects[menu_block][version] = "2.3"
 
 projects[menu_position][subdir] = "contrib"
 projects[menu_position][version] = "1.1"
+
+projects[multiform][subdir] = "contrib"
+projects[multiform][version] = "1.0"
 
 projects[omega_tools][subdir] = "contrib"
 projects[omega_tools][version] = "3.0-rc4"
@@ -125,6 +164,3 @@ projects[views][version] = "3.5"
 
 projects[views_slideshow][subdir] = "contrib"
 projects[views_slideshow][version] = "3.0"
-
-projects[wysiwyg][subdir] = "contrib"
-projects[wysiwyg][version] = "2.2"
