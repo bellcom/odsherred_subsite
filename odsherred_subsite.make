@@ -4,7 +4,7 @@ core = 7.x
 ; Odsherred theme
 projects[odsherredweb][type] = "theme"
 projects[odsherredweb][download][type] = "git"
-projects[odsherredweb][download][url] = "git@github.com:bellcom/odsherredweb.git"
+projects[odsherredweb][download][url] = "git://github.com/bellcom/odsherredweb.git"
 projects[odsherredweb][download][branch] = "master"
 
 ; OS2Web Theme

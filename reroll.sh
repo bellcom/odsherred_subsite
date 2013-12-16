@@ -42,17 +42,19 @@ drush make --no-gitinfofile -y --no-core --working-copy --contrib-destination=bu
 # . ./deploy.sh
 
 if [ -d "build/$BUILD_DIR/modules" ]; then
-	# Drush make completed without errors. If modules doesnt exist, drush make failed.
+	# Drush make completed without errors. If modules doesn't exist, drush make failed.
 
-    
-    # Copy modules into build
-    cp -r modules/* build/$BUILD_DIR/modules/
+  # Copy modules into build
+  cp -r modules/* build/$BUILD_DIR/modules/
 
-    # Copy themes into build
-    cp -r themes/* build/$BUILD_DIR/themes
+  # Copy themes into build
+  cp -r themes/* build/$BUILD_DIR/themes
 
-    # Copy libraries
-    cp -r libraries/* build/$BUILD_DIR/libraries
+  # Copy libraries
+  if [ ! -d build/$BUILD_DIR/libraries ]; then
+    mkdir build/$BUILD_DIR/libraries
+  fi
+  cp -r libraries/* build/$BUILD_DIR/libraries
 
 	# Lets copy our drupal profile files
 	cp $PROFILE_SRC.info build/$BUILD_DIR/$PROFILE_DST.info
@@ -67,18 +69,17 @@ if [ -d "build/$BUILD_DIR/modules" ]; then
 
 	# Drush stuff for the sites, do this in a subshell
 	(
-	cd $DRUPAL_ROOT 
-    echo "Updating database... Site will go in maintenance mode!"
+	cd $DRUPAL_ROOT
+  echo "Updating database... Site will go in maintenance mode!"
 	mdrush.sh "vset maintenance_mode 1"
-	mdrush.sh "vset updb"
-
+	mdrush.sh "updatedb"
 
 	# Finnally clear the cache
 	echo "Clearing cache..."
 	mdrush.sh "cc registry"
 	mdrush.sh "cc all"
 	mdrush.sh "vset maintenance_mode 0"
-    )
+  )
 
 	echo "Deploy Complete. End of maintenance mode!"
 
