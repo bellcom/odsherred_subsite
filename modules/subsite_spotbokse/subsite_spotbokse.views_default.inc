@@ -180,7 +180,6 @@ function subsite_spotbokse_views_default_views() {
   $handler->display->display_options['fields']['field_link_til_side_1']['id'] = 'field_link_til_side_1';
   $handler->display->display_options['fields']['field_link_til_side_1']['table'] = 'field_data_field_link_til_side';
   $handler->display->display_options['fields']['field_link_til_side_1']['field'] = 'field_link_til_side';
-  $handler->display->display_options['fields']['field_link_til_side_1']['relationship'] = 'field_spotbokse_target_id';
   $handler->display->display_options['fields']['field_link_til_side_1']['label'] = 'Titel';
   $handler->display->display_options['fields']['field_link_til_side_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_link_til_side_1']['element_label_colon'] = FALSE;
@@ -191,8 +190,9 @@ function subsite_spotbokse_views_default_views() {
   $handler->display->display_options['fields']['field_spotbillede']['table'] = 'field_data_field_spotbillede';
   $handler->display->display_options['fields']['field_spotbillede']['field'] = 'field_spotbillede';
   $handler->display->display_options['fields']['field_spotbillede']['label'] = '';
-  $handler->display->display_options['fields']['field_spotbillede']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_spotbillede']['alter']['path'] = '[field_link_til_side]';
+  $handler->display->display_options['fields']['field_spotbillede']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_spotbillede']['alter']['text'] = '<a title="[field_link_til_side_1]" href="[field_link_til_side]">[field_spotbillede]</a>';
+  $handler->display->display_options['fields']['field_spotbillede']['alter']['path'] = '/[field_link_til_side]';
   $handler->display->display_options['fields']['field_spotbillede']['alter']['absolute'] = TRUE;
   $handler->display->display_options['fields']['field_spotbillede']['alter']['alt'] = '[field_link_til_side_1]';
   $handler->display->display_options['fields']['field_spotbillede']['element_type'] = 'span';
@@ -286,6 +286,7 @@ function subsite_spotbokse_views_default_views() {
     t('Block'),
     t('Content pane'),
     t('Indhold referencing Indhold from field_spotbokse'),
+    t('<a title="[field_link_til_side_1]" href="[field_link_til_side]">[field_spotbillede]</a>'),
     t('Alle'),
     t('View panes'),
   );
