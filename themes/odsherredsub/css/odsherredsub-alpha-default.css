@@ -145,8 +145,7 @@ h2 { font-size: 20px;}
 }
 
 .view-spotbokse .views-row { position: relative ; font-size: 12px; width: 212px; height: 187px;}
-.pane-views-panes .view-spotbokse .views-row { float: left; margin: 20px 10px; padding: 5px;background-color: #FFF;}
-.pane-views-panes .view-spotbokse .views-row.views-row-last { margin-right: 6px; }
+.pane-views-panes .view-spotbokse .views-row { float: left; margin: 20px 20px 20px 0px; padding: 4px;background-color: #FFF;}
 .pane-views-panes .view-spotbokse .views-row-1, .pane-views-panes .view-spotbokse .views-row-4, .pane-views-panes .view-spotbokse .views-row-7, .pane-views-panes .view-spotbokse .views-row-10 { margin-left: 0px}
 .pane-views-panes .view-spotbokse .views-row-3, .pane-views-panes .view-spotbokse .views-row-6, .pane-views-panes .view-spotbokse .views-row-9, .pane-views-panes .view-spotbokse .views-row-12 { margin-right: 0px}
 .view-spotbokse .resten a:link,
@@ -245,8 +244,8 @@ padding-top: 10px ;}
 #region-sidebar-first ul.menu li.expanded, 
 #region-sidebar-first ul.menu li ul li { background-image: none !important}
 
-.not-front .view-kontaktblok { margin-top: 20px; }
-.not-front .view-kontaktblok .hbg { padding: 5px; min-height: 187px; margin-top: 1px;  }
+.not-front .view-kontaktblok { margin-top: 20px; margin-left: 0px;}
+.not-front .view-kontaktblok .hbg { padding: 5px; height: 185px; margin-top: 1px;  }
 
 .views-slideshow-cycle-main-frame,
 .views-slideshow-cycle-main-frame-row { height: 280px; width: 930px;}
