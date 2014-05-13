@@ -7,6 +7,12 @@ projects[odsherredweb][download][type] = "git"
 projects[odsherredweb][download][url] = "git://github.com/bellcom/odsherredweb.git"
 projects[odsherredweb][download][branch] = "master"
 
+; Odsherred Subtheme
+projects[odsherredsub][type] = "theme"
+projects[odsherredsub][download][type] = "git"
+projects[odsherredsub][download][url] = "git@github.com:bellcom/odsherredsub.git"
+projects[odsherredsub][download][branch] = "master"
+
 ; OS2Web Theme
 projects[cmstheme][type] = "theme"
 projects[cmstheme][download][type] = "git"

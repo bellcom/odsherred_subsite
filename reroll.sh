@@ -48,7 +48,7 @@ if [ -d "build/$BUILD_DIR/modules" ]; then
   cp -r modules/* build/$BUILD_DIR/modules/
 
   # Copy themes into build
-  cp -r themes/* build/$BUILD_DIR/themes
+  #cp -r themes/* build/$BUILD_DIR/themes
 
   # Copy libraries
   if [ ! -d build/$BUILD_DIR/libraries ]; then
