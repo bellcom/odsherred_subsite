@@ -11,3 +11,9 @@
 .borger_dk_header { padding: 10px;}
 
 h2 { font-size: 20px;}
+.front #search-block-form { background-image: none !important; padding: 0 !important;}
+
+#search-block-form input[type="text"] {height: 32px !important;
+line-height: 32px !important; background-image: none !important; background-color: #FFF; font-size: 14px !important;}
+#search-block-form input[type="submit"]{ width: 36px !important}
+

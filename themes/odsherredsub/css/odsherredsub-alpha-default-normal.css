@@ -4,6 +4,6 @@
 
 .section-header .block-search input[type="text"] {
 
-	width: 254px;
+	width: 254px !important;
 
 	}
