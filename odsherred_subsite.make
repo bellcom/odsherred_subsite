@@ -20,18 +20,18 @@ projects[cmstheme][download][url] = "git://github.com/syddjurs/cmstheme.git"
 projects[cmstheme][download][branch] = "master"
 
 ; OS2Web Base
-projects[os2web_base][type] = "module"
-projects[os2web_base][download][type] = "git"
+;projects[os2web_base][type] = "module"
+;projects[os2web_base][download][type] = "git"
 ;projects[os2web_base][download][tag] = "1.0"
-projects[os2web_base][download][branch] = "master"
-projects[os2web_base][download][url] = "git://github.com/OS2web/os2web_base.git"
+;projects[os2web_base][download][branch] = "master"
+;projects[os2web_base][download][url] = "git://github.com/OS2web/os2web_base.git"
 
 ; Borger.dk Integration
 projects[os2web_borger_dk][type] = "module"
 projects[os2web_borger_dk][download][type] = "git"
 ;projects[os2web_borger_dk][download][tag] = "1.0"
 projects[os2web_borger_dk][download][branch] = "feature/os2web-1.0-migration"
-projects[os2web_borger_dk][download][url] = "https://github.com/OS2web/os2web_borger_dk.git"
+projects[os2web_borger_dk][download][url] = "https://github.com/bellcom/os2web_borger_dk.git"
 
 ; Imported from test setup.
 projects[job_scheduler][subdir] = "contrib"
