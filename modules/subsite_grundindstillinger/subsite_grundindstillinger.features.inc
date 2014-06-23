@@ -7,28 +7,22 @@
 /**
  * Implements hook_ctools_plugin_api().
  */
-function subsite_grundindstillinger_ctools_plugin_api() {
-  list($module, $api) = func_get_args();
+function subsite_grundindstillinger_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "context" && $api == "context") {
     return array("version" => "3");
   }
-  list($module, $api) = func_get_args();
   if ($module == "delta" && $api == "delta") {
     return array("version" => "3");
   }
-  list($module, $api) = func_get_args();
   if ($module == "field_group" && $api == "field_group") {
     return array("version" => "1");
   }
-  list($module, $api) = func_get_args();
   if ($module == "linkit" && $api == "linkit_profiles") {
     return array("version" => "1");
   }
-  list($module, $api) = func_get_args();
   if ($module == "page_manager" && $api == "pages_default") {
     return array("version" => "1");
   }
-  list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -37,7 +31,7 @@ function subsite_grundindstillinger_ctools_plugin_api() {
 /**
  * Implements hook_views_api().
  */
-function subsite_grundindstillinger_views_api() {
+function subsite_grundindstillinger_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
 
@@ -61,10 +55,10 @@ function subsite_grundindstillinger_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '930',
-          'height' => '280',
+          'width' => 930,
+          'height' => 280,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );
@@ -83,10 +77,10 @@ function subsite_grundindstillinger_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '690',
-          'height' => '235',
+          'width' => 690,
+          'height' => 235,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );
@@ -105,10 +99,10 @@ function subsite_grundindstillinger_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '340',
-          'height' => '235',
+          'width' => 340,
+          'height' => 235,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );
@@ -127,10 +121,10 @@ function subsite_grundindstillinger_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '130',
-          'height' => '90',
+          'width' => 130,
+          'height' => 90,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );
@@ -149,10 +143,10 @@ function subsite_grundindstillinger_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '680',
-          'height' => '265',
+          'width' => 680,
+          'height' => 265,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );
@@ -171,11 +165,11 @@ function subsite_grundindstillinger_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '440',
+          'width' => 440,
           'height' => '',
           'upscale' => 0,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );
@@ -197,9 +191,9 @@ function subsite_grundindstillinger_node_info() {
       'help' => '',
     ),
     'page' => array(
-      'name' => t('Indholdsside'),
+      'name' => t('Basic page'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Use <em>basic pages</em> for your static content, such as an \'About us\' page.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
