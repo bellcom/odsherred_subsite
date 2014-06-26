@@ -33,6 +33,12 @@ projects[os2web_borger_dk][download][type] = "git"
 projects[os2web_borger_dk][download][branch] = "feature/os2web-1.0-migration"
 projects[os2web_borger_dk][download][url] = "https://github.com/bellcom/os2web_borger_dk.git"
 
+; Odsherred subsites modules
+projects[odsherred_subsite_modules][type] = "module"
+projects[odsherred_subsite_modules][download][type] = "git"
+projects[odsherred_subsite_modules][download][branch] = "master"
+projects[odsherred_subsite_modules][download][url] = "https://github.com/bellcom/odsherred_subsite_modules.git"
+
 ; Imported from test setup.
 projects[job_scheduler][subdir] = "contrib"
 projects[job_scheduler][version] = "2.0-alpha3"

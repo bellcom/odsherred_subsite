@@ -45,7 +45,7 @@ if [ -d "build/$BUILD_DIR/modules" ]; then
 	# Drush make completed without errors. If modules doesn't exist, drush make failed.
 
   # Copy modules into build
-  cp -r modules/* build/$BUILD_DIR/modules/
+  #cp -r modules/* build/$BUILD_DIR/modules/
 
   # Copy themes into build
   #cp -r themes/* build/$BUILD_DIR/themes
