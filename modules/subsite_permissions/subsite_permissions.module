@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Subsite Permissions feature.
- */
-
-include_once 'subsite_permissions.features.inc';

@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Subsite grundindstillinger feature.
- */
-
-include_once 'subsite_grundindstillinger.features.inc';
