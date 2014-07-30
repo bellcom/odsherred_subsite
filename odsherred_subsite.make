@@ -43,6 +43,9 @@ projects[odsherred_subsite_modules][download][url] = "https://github.com/bellcom
 projects[job_scheduler][subdir] = "contrib"
 projects[job_scheduler][version] = "2.0-alpha3"
 
+projects[bigmenu][subdir] = "contrib"
+projects[bigmenu][version] = "1.2"
+
 projects[bedstpaanettet][subdir] = "contrib"
 projects[bedstpaanettet][version] = "1.0"
 
