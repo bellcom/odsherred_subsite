@@ -202,3 +202,6 @@ projects[views][version] = "3.5"
 
 projects[views_slideshow][subdir] = "contrib"
 projects[views_slideshow][version] = "3.0"
+
+projects[google_analytics][subdir] = "contrib"
+projects[google_analytics][version] = "2.1"
