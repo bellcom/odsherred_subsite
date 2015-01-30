@@ -205,3 +205,6 @@ projects[views_slideshow][version] = "3.0"
 
 projects[google_analytics][subdir] = "contrib"
 projects[google_analytics][version] = "2.1"
+
+projects[node_clone][subdir] = "contrib"
+projects[node_clone][version] = "1.0-rc2"
