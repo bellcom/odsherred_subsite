@@ -33,6 +33,11 @@ projects[odsherred_subsite_modules][download][type] = "git"
 projects[odsherred_subsite_modules][download][branch] = "master"
 projects[odsherred_subsite_modules][download][url] = "https://github.com/bellcom/odsherred_subsite_modules.git"
 
+projects[bc_subsite_subsite][type] = "module"
+projects[bc_subsite_subsite][download][type] = "git"
+projects[bc_subsite_subsite][download][branch] = "master"
+projects[bc_subsite_subsite][download][url] = "https://github.com/bellcom/bc_subsite_subsite.git"
+
 ; Imported from test setup.
 projects[job_scheduler][subdir] = "contrib"
 projects[job_scheduler][version] = "2.0-alpha3"

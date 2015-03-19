@@ -2,6 +2,7 @@ name = Odsherred Subsite
 description = Installs a subsite profile.
 core = 7.x
 dependencies[] = field_ui
+dependencies[] = bc_subsite_subsite
 dependencies[] = subsite_kontaktinfo
 dependencies[] = subsite_permissions
 dependencies[] = subsite_grundindstillinger
