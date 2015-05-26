@@ -7,6 +7,12 @@ projects[ishoj_theme_subsite][download][type] = "git"
 projects[ishoj_theme_subsite][download][url] = "git@github.com:bellcom/ishoj_theme_subsite.git"
 projects[ishoj_theme_subsite][download][branch] = "master"
 
+;Ishoej theme
+projects[ishoj_theme][type] = "theme"
+projects[ishoj_theme][download][type] = "git"
+projects[ishoj_theme][download][url] = "git@github.com:bellcom/ishoj_theme.git"
+projects[ishoj_theme][download][branch] = "master"
+
 ; OS2Web Theme
 projects[cmstheme][type] = "theme"
 projects[cmstheme][download][type] = "git"
