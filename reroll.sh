@@ -71,14 +71,14 @@ if [ -d "build/$BUILD_DIR/modules" ]; then
 	(
 	cd $DRUPAL_ROOT
   echo "Updating database... Site will go in maintenance mode!"
-	mdrush.sh "vset maintenance_mode 1"
-	mdrush.sh "updatedb"
+#	mdrush.sh "vset maintenance_mode 1"
+#	mdrush.sh "updatedb"
 
 	# Finnally clear the cache
 	echo "Clearing cache..."
-	mdrush.sh "cc registry"
-	mdrush.sh "cc all"
-	mdrush.sh "vset maintenance_mode 0"
+#	mdrush.sh "cc registry"
+#	mdrush.sh "cc all"
+#	mdrush.sh "vset maintenance_mode 0"
   )
 
 	echo "Deploy Complete. End of maintenance mode!"
