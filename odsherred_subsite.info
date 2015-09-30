@@ -30,3 +30,4 @@ dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = rdf
 dependencies[] = bigmenu
+dependencies[] = od_music_agreservation
