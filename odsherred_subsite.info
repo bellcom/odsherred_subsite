@@ -1,13 +1,9 @@
 name = Odsherred Subsite
 description = Installs a subsite profile.
 core = 7.x
-dependencies[] = field_ui
-dependencies[] = subsite_kontaktinfo
-dependencies[] = subsite_permissions
-dependencies[] = subsite_grundindstillinger
-
 files[] = odsherred_subsite.profile
-
+dependencies[] = taxonomy
+dependencies[] = field_ui
 dependencies[] = block
 dependencies[] = color
 dependencies[] = comment
@@ -20,7 +16,6 @@ dependencies[] = menu
 dependencies[] = number
 dependencies[] = options
 dependencies[] = path
-dependencies[] = taxonomy
 dependencies[] = dblog
 dependencies[] = search
 dependencies[] = shortcut
@@ -30,4 +25,7 @@ dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = rdf
 dependencies[] = bigmenu
+dependencies[] = subsite_kontaktinfo
+dependencies[] = subsite_permissions
+dependencies[] = subsite_grundindstillinger
 dependencies[] = od_music_agreservation
