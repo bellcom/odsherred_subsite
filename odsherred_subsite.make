@@ -40,10 +40,10 @@ projects[odsherred_subsite_modules][download][branch] = "master"
 projects[odsherred_subsite_modules][download][url] = "https://github.com/bellcom/odsherred_subsite_modules.git"
 
 ; AG Reservervations modules
-projects[odsherred_subsite_modules][type] = "module"
-projects[odsherred_subsite_modules][download][type] = "git"
-projects[odsherred_subsite_modules][download][branch] = "master"
-projects[odsherred_subsite_modules][download][url] = "https://github.com/bellcom/agreservations_changed.git"
+projects[agreservations_changed][type] = "module"
+projects[agreservations_changed][download][type] = "git"
+projects[agreservations_changed][download][branch] = "master"
+projects[agreservations_changed][download][url] = "https://github.com/bellcom/agreservations_changed.git"
 
 ; Imported from test setup.
 projects[job_scheduler][subdir] = "contrib"
