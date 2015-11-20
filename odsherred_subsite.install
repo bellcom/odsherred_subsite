@@ -42,7 +42,7 @@ function odsherred_subsite_install() {
   db_query('ALTER TABLE `node` CONVERT TO CHARACTER SET utf8 COLLATE utf8_danish_ci');
 
   // Run the 'fix-subsites' script
-  require_once('fix-subsites.php');
+  require_once(drupal_get_path('profile', 'odsherred_subsite') . '/fix-subsites.php');
 }
 
 function odsherred_subsite_install_tasks($install_state) {
