@@ -41,6 +41,8 @@ function odsherred_subsite_install() {
   // Set collation for node table, utf8_general_ci thinks that A = Å
   db_query('ALTER TABLE `node` CONVERT TO CHARACTER SET utf8 COLLATE utf8_danish_ci');
 
+  // Run the 'fix-subsites' script
+  require_once('fix-subsites.php');
 }
 
 function odsherred_subsite_install_tasks($install_state) {
@@ -56,14 +58,6 @@ function odsherred_subsite_install_tasks($install_state) {
 }
 
 function odsherred_subsite_setup_after() {
-  # From https://os2web.atlassian.net/browse/ODSDK-92
-  #1. ”Home” skal hedde ”Forside”
-  $home_menu_id = 368;
-
-  $item = menu_link_load($home_menu_id);
-  $item['link_title'] = 'Forside';
-
-  menu_link_save($item);
 
   $super_user_rid = 4;
   user_role_grant_permissions($super_user_rid, array('view the administration theme', 'access overlay', 'administer menu'));
@@ -469,6 +463,14 @@ function odsherred_subsite_standard_install() {
   db_insert('users_roles')
     ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
+
+  // Create a Home link in the main menu.
+  $item = array(
+    'link_title' => st('Forside'),
+    'link_path' => '<front>',
+    'menu_name' => 'main-menu',
+  );
+  menu_link_save($item);
 
   // Update the menu router information.
   menu_rebuild();

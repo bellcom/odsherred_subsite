@@ -1,12 +1,4 @@
 <?php
-  # From https://os2web.atlassian.net/browse/ODSDK-92
-  #1. ”Home” skal hedde ”Forside”
-  $home_menu_id = 368;
-
-  $item = menu_link_load($home_menu_id);
-  $item['link_title'] = 'Forside';
-
-  menu_link_save($item);
 
   #2. ”Basic Page” skal hedde ”Simpel side”
   $sql = "UPDATE node_type SET name = 'Simpel side' WHERE type = 'page'";
