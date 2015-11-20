@@ -86,7 +86,7 @@ if [ -d "build/$BUILD_DIR/modules" ]; then
 
 	# Cleanup old builds.
 	echo "Deleting old build dirs..."
-	. ./cleanup.sh
+	#. ./cleanup.sh
 else
 	# Build failed, remove build
 	rm -rf build/$BUILD_DIR
