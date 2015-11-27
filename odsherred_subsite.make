@@ -73,6 +73,12 @@ libraries[ckeditor][destination] = "libraries"
 projects[context][subdir] = "contrib"
 projects[context][version] = "3.0-beta6"
 
+projects[calendar][subdir] = "contrib"
+projects[calendar][version] = "3.5"
+
+projects[variable][subdir] = "contrib"
+projects[variable][version] = "2.5"
+
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.2"
 
