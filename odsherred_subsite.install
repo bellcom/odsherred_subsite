@@ -61,6 +61,9 @@ function odsherred_subsite_setup_after() {
 
   $super_user_rid = 4;
   user_role_grant_permissions($super_user_rid, array('view the administration theme', 'access overlay', 'administer menu'));
+
+  // For some weird reason the 'subsite_grundindstillinger' feature gets overridden on install. Force a feature-revert
+  features_revert_module('subsite_grundindstillinger');
 }
 
 function odsherred_subsite_standard_install() {
