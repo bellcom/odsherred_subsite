@@ -40,9 +40,6 @@ function odsherred_subsite_install() {
 
   // Set collation for node table, utf8_general_ci thinks that A = Å
   db_query('ALTER TABLE `node` CONVERT TO CHARACTER SET utf8 COLLATE utf8_danish_ci');
-
-  // Run the 'fix-subsites' script
-  require_once(drupal_get_path('profile', 'odsherred_subsite') . '/fix-subsites.php');
 }
 
 function odsherred_subsite_install_tasks($install_state) {
@@ -64,6 +61,9 @@ function odsherred_subsite_setup_after() {
 
   // For some weird reason the 'subsite_grundindstillinger' feature gets overridden on install. Force a feature-revert
   features_revert_module('subsite_grundindstillinger');
+
+  // Run the 'fix-subsites' script
+  require_once(drupal_get_path('profile', 'odsherred_subsite') . '/fix-subsites.php');
 }
 
 function odsherred_subsite_standard_install() {
