@@ -22,68 +22,7 @@
   // Fixed in features
 
   #9. funtionerne ”a-å”, ”læs højt” og ”sitemap” også skal med på alle subsites.
-  // Copied from subsite_grundindstillinger.features.menu_links.inc
-  $menu_links['user-menu:a-aa-index'] = array(
-    'menu_name' => 'user-menu',
-    'link_path' => 'a-aa-index',
-    'router_path' => 'a-aa-index',
-    'link_title' => 'A-Å Indeks',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '0',
-  );
-  // Exported menu link: user-menu:http://www.adgangforalle.dk/
-  $menu_links['user-menu:http://www.adgangforalle.dk/'] = array(
-    'menu_name' => 'user-menu',
-    'link_path' => 'http://www.adgangforalle.dk/',
-    'router_path' => '',
-    'link_title' => 'Læs højt',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '1',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '0',
-  );
-  // Exported menu link: user-menu:sitemap
-  $menu_links['user-menu:sitemap'] = array(
-    'menu_name' => 'user-menu',
-    'link_path' => 'sitemap',
-    'router_path' => 'sitemap',
-    'link_title' => 'Sitemap',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '0',
-  );
-
-  foreach ($menu_links as $link) {
-    $exists = db_query("SELECT mlid from {menu_links} WHERE link_title=:link_title AND link_path=:link_path", array(':link_title' =>  $link['link_title'], ':link_path' => $link['link_path']))->fetchField();
-    // Save the record if the data does not exist
-    if (!$exists) {
-      menu_link_save($link);
-    }
-  }
+  // Fixed in features
 
   $sql = "SELECT * FROM field_config_instance WHERE field_name = 'field_telefon'";
   $result = db_query($sql);
