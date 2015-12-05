@@ -10,31 +10,24 @@
  * Perform actions to set up the site for this profile.
  */
 function odsherred_subsite_install() {
-  include_once DRUPAL_ROOT . '/profiles/standard/standard.install';
   odsherred_subsite_standard_install();
 
   theme_enable(array('seven', 'omega', 'cmstheme', 'odsherredweb', 'odsherredsub'));
   theme_disable(array('bartik', 'rubik'));
   variable_set('theme_default', 'odsherredsub');
-  variable_set('file_temporary_path', '/var/www/subsites.odsherred.dk/tmp');
+  variable_set('file_temporary_path', '../tmp');
 
-  //$odsherredsub_settings = variable_get('theme_odsherredsub_settings', array());
-  //$odsherredsub_settings['theme_color'] = 'blue';
-  //variable_set('theme_odsherredsub_settings', $odsherredsub_settings);
-
-  // Disable all default modules.
+  // Disable all default blocks.
   db_update('block')
     ->fields(array(
       'status' => 0,
     ))
     ->execute();
 
-  // Set admin theme to Rubik.
-  variable_set('admin_theme', 'seven');
   // Set admin theme on node/edit and node/add
   module_disable(array('update'));
   // Set default TZ.
-  variable_set('date_default_timezone', "Europe/Berlin");
+  variable_set('date_default_timezone', "Europe/Copenhagen");
   variable_set('date_first_day', "1");
   variable_set('configurable_timezones', "0");
 
