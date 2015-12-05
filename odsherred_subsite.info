@@ -29,4 +29,3 @@ dependencies[] = features
 dependencies[] = subsite_kontaktinfo
 dependencies[] = subsite_permissions
 dependencies[] = subsite_grundindstillinger
-;dependencies[] = od_music_agreservation
