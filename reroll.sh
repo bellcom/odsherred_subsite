@@ -61,6 +61,7 @@ if [ -d "build/$BUILD_DIR/modules" ]; then
 	cp $PROFILE_SRC.profile build/$BUILD_DIR/$PROFILE_DST.profile
 	cp $PROFILE_SRC.install build/$BUILD_DIR/$PROFILE_DST.install
 	cp fix-subsites.php build/$BUILD_DIR/fix-subsites.php
+	cp -r translations build/$BUILD_DIR/
 
 	# Move old build to previous
 	unlink build/$BUILD_DIR_PREV
